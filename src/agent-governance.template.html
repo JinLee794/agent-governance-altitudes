@@ -14,6 +14,7 @@
 }
 .a30{--c:var(--purple);--cl:var(--purpleL)} .a10{--c:var(--brand);--cl:var(--brandL)} .a5{--c:var(--teal);--cl:var(--tealL)}
 .a1{--c:var(--amber);--cl:var(--amberL)} .a05{--c:var(--pink);--cl:var(--pinkL)} .a0{--c:var(--green);--cl:var(--greenL)} .ax{--c:var(--muted);--cl:#EEF2F7}
+.a20{--c:#3B4CCA;--cl:#EEF0FC}
 *{box-sizing:border-box}
 html{scroll-snap-type:y proximity;scroll-behavior:smooth}
 body{margin:0;font-family:var(--f);color:var(--ink);background:#02060f;-webkit-font-smoothing:antialiased;padding-left:96px}
@@ -383,6 +384,190 @@ code{font-family:Consolas,monospace;font-size:.92em;background:#EEF2F7;border-ra
 #lbox img{max-width:100%;max-height:100%;border-radius:10px;box-shadow:0 20px 60px rgba(0,0,0,.5);background:#fff}
 #lbox .lcap{position:absolute;bottom:10px;left:0;right:0;text-align:center;color:#C9D6E6;font-size:12px}
 
+/* ---------- 20,000 ft build planes ---------- */
+.sp.ex{background:#fff;color:var(--faint);border:1px dashed var(--hair2);line-height:13px}
+.ptop{display:flex;align-items:center;gap:10px;background:linear-gradient(90deg,var(--purpleL),#fff);border:1px solid #E2D6F3;border-radius:12px;padding:5px 12px;font-size:12px;margin:0 0 6px;cursor:pointer;width:100%;font-family:inherit;color:inherit;text-align:left}
+.ptop [data-ico]{width:16px;height:16px;color:var(--purple)}
+.ptop b{color:var(--purple)}
+section[data-t="20,000 ft"] .wrap{max-width:1320px;padding:18px 24px}
+.ptabs2{display:flex;gap:8px;margin-bottom:6px;align-items:stretch}
+.ptab2{flex:1;display:flex;align-items:center;gap:9px;background:#fff;border:1px solid var(--hair);border-top:4px solid var(--pc);border-radius:12px;padding:6px 10px;cursor:pointer;font:inherit;color:inherit;text-align:left;box-shadow:var(--s1);opacity:.72;transition:opacity .2s,box-shadow .2s}
+.ptab2:hover{opacity:1}
+.ptab2.on{opacity:1;box-shadow:0 0 0 3px color-mix(in srgb,var(--pc) 24%,transparent),var(--s2)}
+.ptab2 .ii{width:28px;height:28px;border-radius:8px;display:grid;place-items:center;background:var(--pc);color:#fff;flex:none}
+.ptab2 .ii [data-ico]{width:15px;height:15px}
+.ptab2 b{display:block;font-size:13.5px;line-height:1.2}
+.ptab2 small{display:block;font-size:10.5px;color:var(--muted);line-height:1.25}
+.ptab2 .cn2{margin-left:auto;font-size:9.5px;font-weight:800;color:var(--pc);border:1.5px solid var(--pc);border-radius:999px;padding:0 6px;line-height:15px;white-space:nowrap;text-transform:uppercase}
+.seg2{display:flex;flex-direction:column;gap:3px;justify-content:center}
+.seg2 button{font:inherit;font-size:10.5px;font-weight:650;border:1px solid var(--hair2);background:#fff;border-radius:8px;padding:3px 8px;cursor:pointer;color:var(--muted);white-space:nowrap}
+.seg2 button.on{background:#3B4CCA;border-color:#3B4CCA;color:#fff}
+.pconn{display:flex;gap:6px;flex-wrap:wrap;align-items:center;font-size:11.5px;color:var(--muted);margin:0 0 8px;min-height:22px}
+.pconn .fc{display:inline-flex;align-items:center;gap:5px;background:#fff;border:1px solid var(--hair2);border-radius:999px;padding:1px 9px;color:#33445C}
+.pconn .fc b{color:var(--fc)}
+.pconn .fc.ig{border:1.5px dashed var(--fc)}
+.pdia{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:14px;align-items:start}
+#pdFit{position:relative}
+#pdBox{position:absolute;left:0;top:0;width:880px;height:410px;transform-origin:0 0}
+#pdBox>svg{position:absolute;inset:0;width:880px;height:410px;overflow:visible}
+.pten{position:absolute;left:0;top:0;width:880px;height:46px;border-radius:12px;background:linear-gradient(90deg,var(--purpleL),#fff);border:1px solid #E2D6F3}
+.pten .tl{position:absolute;left:12px;top:7px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:var(--purple);line-height:1.25}
+.pten .tl small{display:block;font-weight:600;text-transform:none;letter-spacing:0;color:var(--muted);font-size:10px}
+.tch{position:absolute;top:10px;transform:translateX(-50%);display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:700;color:#fff;background:var(--bc);border-radius:999px;padding:3px 10px;white-space:nowrap;box-shadow:0 1px 3px rgba(0,0,0,.15)}
+.tch.off{background:#fff;color:var(--faint);border:1px dashed var(--hair2);box-shadow:none;font-weight:600}
+.pdn{position:absolute;background:#fff;border:1px solid var(--hair2);border-radius:12px;padding:8px 11px;box-shadow:var(--s1);font-size:11px;color:var(--muted);line-height:1.3}
+.pdn b{display:flex;align-items:center;gap:6px;font-size:12.5px;color:var(--ink);margin-bottom:2px}
+.pdn b [data-ico]{width:14px;height:14px;color:var(--pc)}
+.pdn.ag{border:2px solid var(--pc);background:color-mix(in srgb,var(--pc) 7%,#fff);text-align:center;padding-top:14px}
+.pdn.ag b{justify-content:center;font-size:14px}
+.pz{position:absolute;transform:translate(-50%,-50%);display:flex;flex-direction:column;align-items:center;gap:3px;background:#fff;border:1.5px solid var(--hair2);border-radius:12px;padding:5px 10px 6px;cursor:pointer;font:inherit;color:inherit;min-width:122px;box-shadow:var(--s1);transition:box-shadow .25s,border-color .25s}
+.pz .zl{display:flex;align-items:center;gap:5px;font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:var(--ink)}
+.pz .zl [data-ico]{width:13px;height:13px}
+.pz .dots{display:flex;gap:3px;min-height:9px}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:#B9C4D3}
+.dot.n{background:var(--pc);box-shadow:0 0 0 2px color-mix(in srgb,var(--pc) 25%,transparent)}
+.pz.ig{border-color:var(--pc);box-shadow:0 0 0 4px color-mix(in srgb,var(--pc) 15%,transparent),var(--s2)}
+html:not(.static) .pz.ig{animation:pzg 2.6s ease-in-out infinite}
+@media (prefers-reduced-motion:reduce){.pz.ig{animation:none!important}}
+@keyframes pzg{50%{box-shadow:0 0 0 7px color-mix(in srgb,var(--pc) 9%,transparent),var(--s2)}}
+.pz .plus{position:absolute;top:-9px;right:-10px;background:var(--pc);color:#fff;font-size:9.5px;font-weight:800;border-radius:999px;padding:1px 6px;white-space:nowrap}
+.pz.on{outline:2.5px solid var(--ink);outline-offset:2px}
+.pz.none .zl{color:var(--faint)}
+.pdia.pre .dot.n,.pdia.pre .pz .plus{display:none}
+.pdia.pre .pz.ig{border-color:var(--hair2);box-shadow:var(--s1);animation:none}
+#pdp{font-size:12.3px}
+#pdp h4{margin:2px 0 6px;font-size:17px;display:flex;align-items:center;gap:7px}
+#pdp h4 [data-ico]{width:18px;height:18px;color:var(--pc)}
+#pdp .ent{border-radius:9px;padding:6px 9px;margin-bottom:8px;font-size:11.8px;line-height:1.4;background:var(--purpleL);border:1px solid #E2D6F3}
+#pdp .ent.off{background:#F6F8FB;border-color:var(--hair);color:var(--muted)}
+#pdp .ent b{color:var(--purple)}
+#pdp .k2{font-size:10.5px;text-transform:uppercase;letter-spacing:.07em;font-weight:800;color:var(--faint);margin:8px 0 4px}
+#pdp .li{display:block;border-radius:8px;padding:4px 8px;margin-bottom:4px;background:#fff;border:1px solid var(--hair);line-height:1.38}
+#pdp .li.ig{border:1.5px solid var(--pc);background:color-mix(in srgb,var(--pc) 6%,#fff)}
+#pdp .li .sp{margin-right:4px}
+#pdp .none{color:var(--faint);font-style:italic;margin:0 0 4px}
+#pdp.pre .igs{opacity:.35}
+.pleg2{display:flex;gap:8px;flex-wrap:wrap;align-items:center;font-size:10.8px;color:var(--muted);margin:8px 0 0}
+/* vertical switch (carries down every altitude) */
+#vsw{display:none;align-items:center;gap:3px;background:rgba(255,255,255,.94);border:1px solid var(--hair2);border-radius:999px;padding:3px;box-shadow:var(--s1)}
+body.vshow #vsw{display:inline-flex}
+#vsw button{font:inherit;font-size:11.5px;font-weight:650;border:0;background:transparent;border-radius:999px;padding:3px 9px;cursor:pointer;color:var(--muted);display:inline-flex;align-items:center;gap:5px;box-shadow:none}
+#vsw button i{width:8px;height:8px;border-radius:50%;background:var(--pc)}
+#vsw button.on{background:var(--pc);color:#fff}
+#vsw button.on i{background:#fff}
+#rail .it.vdesc::after{content:"";position:absolute;right:7px;top:28%;bottom:28%;width:3px;border-radius:2px;background:var(--vc,transparent);opacity:.85}
+section.vx .wrap>:not(.vstub){display:none!important}
+.vstub{display:none}
+section.vx .vstub{display:block}
+.vstub .vh{display:flex;align-items:center;gap:10px;margin-bottom:4px}
+.vstub .vh .ii{width:34px;height:34px;border-radius:9px;display:grid;place-items:center;background:var(--pc);color:#fff}
+.vstub .vh .ii [data-ico]{width:18px;height:18px}
+.vstub h2{margin:2px 0 2px}
+.vstub .q{color:var(--muted);font-size:14px;margin:0 0 12px}
+.vstub .vg{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.vstub .vc{background:#fff;border:1px solid var(--hair);border-radius:14px;padding:12px 14px;box-shadow:var(--s1)}
+.vstub .vc h5{margin:0 0 8px;font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:var(--faint)}
+.vstub .vc.ig{border:1.5px solid var(--pc)}
+.vstub .vc.ig h5{color:var(--pc)}
+.vstub .li{display:block;border-radius:8px;padding:6px 9px;margin-bottom:6px;background:#F8FAFC;border:1px solid var(--hair);font-size:13px;line-height:1.4}
+.vstub .li .sp{margin-right:5px}
+.vstub .none{color:var(--faint);font-style:italic;font-size:13px}
+.vstub .vfoot{display:flex;gap:10px;align-items:center;margin-top:12px;font-size:12.5px;color:var(--muted);background:#F6F8FB;border:1px dashed var(--hair2);border-radius:12px;padding:8px 12px}
+.vstub .vfoot button{font:inherit;font-size:12px;font-weight:650;border:1px solid var(--hair2);background:#fff;border-radius:999px;padding:3px 11px;cursor:pointer;color:#0F6CBD;white-space:nowrap}
+/* full per-plane descent */
+.dx-top{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+.dx-crumb{display:flex;align-items:center;gap:5px;font-size:12px;color:var(--muted)}
+.dx-crumb button,.dx-fdy{font:inherit;font-size:11.5px;font-weight:650;border:1px solid var(--hair2);background:#fff;border-radius:999px;padding:2px 10px;cursor:pointer;color:var(--muted)}
+.dx-crumb button:hover,.dx-fdy:hover{color:var(--pc);border-color:var(--pc)}
+.dx-crumb b{color:var(--ink)}
+.dx-fdy{margin-left:auto}
+.dx-q{display:block;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.07em;color:var(--pc)}
+.vstub .vh h2{margin:0}
+.dx-body{display:grid;grid-template-columns:minmax(0,1fr) 250px;gap:16px;margin-top:10px}
+.dx-sub{font-size:13px;color:var(--muted);margin:0 0 10px}
+.dx-it{display:block;border-radius:8px;padding:3px 8px;margin-top:4px;font-size:12px;line-height:1.38;background:#fff;border:1px solid var(--hair)}
+.dx-it.ig{border:1.5px solid var(--pc);background:color-mix(in srgb,var(--pc) 6%,#fff)}
+.dx-it .sp,.dx-pol .sp{margin-right:5px}
+.dx-cam{display:inline-grid;place-items:center;width:22px;height:20px;border-radius:6px;border:1px solid color-mix(in srgb,var(--pc) 40%,#fff);background:color-mix(in srgb,var(--pc) 8%,#fff);color:var(--pc);cursor:zoom-in;padding:0;margin-left:6px;vertical-align:middle;flex:none}
+.dx-cam [data-ico]{width:13px;height:13px}
+.hl{box-shadow:0 0 0 3px color-mix(in srgb,var(--pc) 45%,transparent)!important;border-color:var(--pc)!important}
+.dx-trees{display:grid;gap:14px}.dx-trees.two{grid-template-columns:1fr 1fr}
+.dx-tl{font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.07em;color:var(--faint);margin-bottom:6px}
+.dx-node{position:relative;margin-left:calc(var(--d)*26px);border:1px solid var(--hair2);border-radius:12px;padding:7px 10px;margin-bottom:8px;background:#fff;transition:box-shadow .2s}
+.dx-node::before{content:"";position:absolute;left:-16px;top:-9px;width:13px;height:26px;border-left:1.5px solid #C5CFDB;border-bottom:1.5px solid #C5CFDB;border-bottom-left-radius:7px}
+.dx-node[style*="--d:0"]::before{display:none}
+.dx-node .nt{display:flex;align-items:center;gap:6px;font-size:13px;font-weight:700}
+.dx-node .nt small{font-weight:400;color:var(--muted);font-size:11.5px}
+.dx-node.on{border:2px solid var(--pc);background:color-mix(in srgb,var(--pc) 5%,#fff)}
+.dx-node .tag{margin-left:auto;font-size:9.5px;font-weight:800;color:#fff;background:var(--pc);border-radius:999px;padding:0 8px;line-height:16px;text-transform:uppercase;letter-spacing:.04em}
+.dx-node .tag.inh{background:#fff;color:var(--pc);border:1px solid var(--pc)}
+.dx-effs{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:10px}
+.dx-effs button{font:inherit;font-size:11.5px;font-weight:650;border:1px solid var(--hair2);border-radius:999px;padding:2px 10px;background:#fff;color:var(--muted);cursor:pointer}
+.dx-effs button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.dx-cat{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px}
+.dx-fam{border:1px solid var(--hair);border-radius:12px;padding:8px 10px;background:#FBFCFE;transition:box-shadow .2s}
+.dx-fam h4{margin:0 0 6px;font-size:12.5px;display:flex;align-items:center}
+.dx-fam h4 small{margin-left:auto;font-weight:600;color:var(--faint);font-size:11px}
+.dx-pol{display:flex;align-items:flex-start;gap:6px;border-radius:8px;padding:4px 7px;margin-bottom:4px;font-size:12px;line-height:1.35;background:#fff;border:1px solid var(--hair);transition:opacity .2s}
+.dx-pol.ig{border:1.5px solid var(--pc);background:color-mix(in srgb,var(--pc) 6%,#fff)}
+.dx-pol.dim{opacity:.25}
+.dx-pol .t{flex:1}
+.eff{flex:none;font-size:9.5px;font-weight:800;border-radius:5px;padding:0 6px;line-height:16px;text-transform:uppercase;letter-spacing:.03em}
+.eff.Block{background:#FDE7EA;color:#B4233A}.eff.Restrict{background:#E7F0FC;color:#0F6CBD}.eff.Require{background:#EEE7FA;color:#5B2E91}.eff.Report{background:#EEF2F7;color:var(--muted)}
+.dx-lens{position:relative;height:420px}
+.dx-lens>svg{position:absolute;inset:0;width:100%;height:100%}
+.dx-lens .core{position:absolute;left:50%;top:44%;transform:translate(-50%,-50%);width:220px;border:2.5px solid var(--pc);border-radius:16px;background:color-mix(in srgb,var(--pc) 7%,#fff);padding:14px;text-align:center;box-shadow:0 8px 24px -12px rgba(0,0,0,.35)}
+.dx-lens .core b{display:block;font-size:15px}
+.dx-lens .core small{color:var(--muted);font-size:12px}
+.dx-ln{position:absolute;width:33%;border:1px solid var(--hair2);border-radius:12px;background:#fff;padding:7px 9px;box-shadow:var(--s1);transition:box-shadow .2s}
+.dx-ln h4{margin:0;font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:var(--pc);display:flex;align-items:center}
+.dx-rows{display:grid;grid-template-columns:130px 1fr 1fr;gap:6px}
+.dx-rows .hd{font-size:11.5px;font-weight:700;color:var(--ink);padding:0 4px 2px}
+.dx-rows .rc{font-size:12.5px;font-weight:700;background:#F6F8FB;border:1px solid var(--hair);border-radius:10px;padding:6px 9px;display:flex;align-items:center;transition:box-shadow .2s}
+.dx-rows .cl{border:1px solid var(--hair);border-radius:10px;padding:2px 6px 6px;background:#FBFCFE;transition:box-shadow .2s}
+.dx-rows .cl.b{border-left:3px solid var(--pc)}
+.dx-rows .none{display:block;font-size:11.5px;color:var(--faint);font-style:italic;padding:6px 4px 0}
+.dx-steps{display:flex;align-items:stretch}
+.dx-step{flex:1;position:relative;border:1px solid var(--hair2);border-radius:12px;padding:7px 8px;background:#fff;margin-right:16px;transition:box-shadow .2s}
+.dx-step:last-child{margin-right:0}
+.dx-step::after{content:"";position:absolute;right:-14px;top:22px;width:12px;height:2px;background:#B9C4D3}
+.dx-step:last-child::after{display:none}
+.dx-step .sh{display:flex;align-items:center;gap:5px;font-size:12.5px}
+.dx-step .n{display:inline-grid;place-items:center;width:20px;height:20px;border-radius:50%;background:var(--pc);color:#fff;font-size:10.5px;font-weight:800;flex:none}
+.dx-step .dx-it{font-size:11.3px}
+.dx-side{border-left:1px dashed var(--hair2);padding-left:14px;font-size:12.5px;color:var(--muted)}
+.dx-side h5{margin:12px 0 5px;font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--faint)}
+.dx-side h5:first-child{margin-top:0}
+.dx-side p{margin:0}
+.dx-mix{display:flex;height:10px;border-radius:5px;overflow:hidden;background:#EEF2F7}
+.dx-mix i{display:block;height:100%}
+.dx-mixl{display:flex;gap:9px;flex-wrap:wrap;font-size:11.5px;margin-top:4px}
+.dx-mixl b{color:var(--ink)}
+.dx-see{margin-top:14px;border-top:1px solid var(--hair);padding-top:10px}
+.dx-sh{display:flex;align-items:center;gap:7px;font-size:13px;margin-bottom:8px}
+.dx-sh [data-ico]{width:16px;height:16px;color:var(--pc,var(--brand))}
+.dx-sh span{color:var(--faint);font-size:12px}
+.dx-sg{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px}
+.dx-shot{font:inherit;text-align:left;display:flex;flex-direction:column;border:1px solid var(--hair2);border-radius:12px;background:#fff;padding:0;overflow:hidden;cursor:zoom-in;box-shadow:var(--s1);transition:transform .15s,box-shadow .15s}
+.dx-shot:hover{transform:translateY(-2px);box-shadow:var(--s2);border-color:var(--pc,var(--brand))}
+.dx-shot .im{display:block;height:128px;background:#EEF2F7;border-bottom:1px solid var(--hair)}
+.dx-shot img{width:100%;height:100%;object-fit:cover;object-position:top left;display:block}
+.dx-shot .tx{display:flex;flex-direction:column;gap:3px;padding:7px 10px 9px}
+.dx-shot .tx b{font-size:12.5px;color:var(--ink)}
+.dx-shot .dd{font-size:11.5px;color:var(--muted);line-height:1.35}
+.dx-shot .mt{display:flex;align-items:center;gap:6px;font-size:10.5px;color:var(--faint);margin-top:2px;flex-wrap:wrap}
+.dx-foot{display:flex;gap:10px;align-items:center;margin-top:12px;font-size:12.5px;color:var(--muted);background:#F6F8FB;border:1px solid var(--hair);border-radius:12px;padding:7px 10px}
+.dx-foot button{font:inherit;font-size:12px;font-weight:650;border:1px solid var(--hair2);background:#fff;border-radius:999px;padding:3px 11px;cursor:pointer;color:var(--muted);display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
+.dx-foot button:last-child{margin-left:auto;color:var(--pc);border-color:color-mix(in srgb,var(--pc) 45%,#fff)}
+.dx-foot [data-ico]{width:14px;height:14px}
+#pdp .pdshot{display:block;width:100%;font:inherit;text-align:left;border:1px solid var(--hair2);border-radius:10px;background:#fff;padding:0;margin-top:8px;overflow:hidden;cursor:zoom-in}
+#pdp .pdshot img{display:block;width:100%;height:92px;object-fit:cover;object-position:top left;border-bottom:1px solid var(--hair)}
+#pdp .pdshot span{display:flex;align-items:center;gap:5px;padding:5px 8px;font-size:11.5px;color:var(--muted)}
+#pdp .pdshot b{color:var(--ink)}
+#pdp .pdshot [data-ico]{width:13px;height:13px;color:var(--pc)}
+#pdp .pzin{display:inline-flex;align-items:center;gap:6px;margin-top:8px;font:inherit;font-size:12px;font-weight:650;border:1px solid color-mix(in srgb,var(--pc) 45%,#fff);color:var(--pc);background:#fff;border-radius:999px;padding:3px 11px;cursor:pointer}
+#pdp .pzin [data-ico]{width:14px;height:14px}
+
 /* ---------- org chart ---------- */
 .orgroot{display:flex;justify-content:center}
 .oroot{display:flex;align-items:center;gap:16px;background:#fff;border:1.5px solid var(--hair2);border-radius:16px;padding:10px 20px;box-shadow:var(--s2);position:relative}
@@ -462,6 +647,7 @@ code{font-family:Consolas,monospace;font-size:.92em;background:#EEF2F7;border-ra
 .ci{display:inline-block;font-size:9.5px;font-weight:700;line-height:1.4;padding:0 4px;border-radius:4px;text-decoration:none!important;letter-spacing:.02em;border:1px solid transparent;font-family:var(--f)}
 .ci.l{background:var(--brandL);color:var(--brand);border-color:#C9DDF3}
 .ci.i{background:var(--purpleL);color:var(--purple);border-color:#DCCFF1}
+.ci.g{background:#F0F2F5;color:#24292F;border-color:#D0D7DE}
 .ci:hover{filter:brightness(.93)}
 #srcov{position:fixed;inset:0;background:rgba(15,27,45,.38);z-index:41;display:grid;place-items:center;padding:30px}
 #srcov[hidden]{display:none}
@@ -546,7 +732,7 @@ table.ops{width:100%;border-collapse:separate;border-spacing:0;background:#fff;b
 <div id="world" aria-hidden="true"><div id="worldFx"><div id="worldTrack"></div><div id="cloudPass"></div></div><div id="streaks"></div></div>
 
 <nav id="rail"><div class="sky"></div><div id="plane" data-ico="plane"></div></nav>
-<div id="tools"><span id="altNow" class="ax">Overview</span><button id="sbtn" title="All sources (S)"><span data-ico="scroll-text"></span>Sources <kbd>S</kbd></button><button id="nbtn" title="Speaker notes (N)"><span data-ico="notebook-pen"></span>Notes <kbd>N</kbd></button></div>
+<div id="tools"><span id="vsw"></span><span id="altNow" class="ax">Overview</span><button id="sbtn" title="All sources (S)"><span data-ico="scroll-text"></span>Sources <kbd>S</kbd></button><button id="nbtn" title="Speaker notes (N)"><span data-ico="notebook-pen"></span>Notes <kbd>N</kbd></button></div>
 
 <!-- ================= OVERVIEW ================= -->
 <section data-t="Overview" class="ax">
@@ -629,6 +815,21 @@ table.ops{width:100%;border-collapse:separate;border-spacing:0;background:#fff;b
   </div>
 </section>
 <div id="lbox" role="dialog" aria-label="Screenshot"><img alt=""><div class="lcap"></div></div>
+
+<!-- ================= 20,000 FT ================= -->
+<section data-t="20,000 ft" class="alt a20">
+  <div class="wrap">
+    <span class="eyebrow r"><span data-ico="layers"></span>20,000 ft · Build planes</span>
+    <h2 class="r" data-d="1">Pick a plane: see its controls, and what Ignite added</h2>
+    <p class="lead r" data-d="1" style="margin-bottom:8px" data-cite="I1,I8,L34">Agents get built in four places. Pick one: the diagram shows where its governance controls act and which enterprise controls reach it, and your choice carries down every altitude below.</p>
+    <div class="r" data-d="2">
+      <div class="ptabs2" id="ptabs2"></div>
+      <div class="pconn" id="pconn"></div>
+      <div class="pdia" id="pdia"><div id="pdFit"><div id="pdBox"></div></div><div class="panel" id="pdp"></div></div>
+      <div class="pleg2"><span class="dot"></span>Control in place <span class="dot n" style="--pc:#3B4CCA"></span>Added at Ignite 2026 <span class="sp ga">GA</span>Generally available <span class="sp pv">Preview</span>Public preview <span class="sp fr">Frontier</span>Frontier program <span class="sp soon">Coming</span>Announced <span class="sp ex">Context</span>Shipped earlier in 2026 · Click a zone for details</div>
+    </div>
+  </div>
+</section>
 
 <!-- ================= 10,000 FT ================= -->
 <section data-t="10,000 ft" class="a10">
@@ -842,6 +1043,7 @@ const changed = () => document.dispatchEvent(new Event('statechange'));
 /* ================= sources ================= */
 // L = Microsoft Learn (behaviour, status). I = Ignite 2026 announcements (what's new). Checked Nov 23, 2026.
 const ML = 'https://learn.microsoft.com/';
+const GD = 'https://docs.github.com/en/';
 const SRC = {
   I1: { k: 'i', t: 'Microsoft Ignite 2026 Book of News', u: 'https://news.microsoft.com/events/ignite/2026/book-of-news/', ev: 'Ignite 2026 · Nov 17', n: 'New agent governance and security capabilities across Agent 365, Entra, Intune, Defender and Purview.' },
   I2: { k: 'i', t: 'What\'s new in Microsoft Agent 365: Ignite 2026', u: 'https://techcommunity.microsoft.com/blog/agent-365-blog/whats-new-in-microsoft-agent-365-ignite-2026/4571753', ev: 'Ignite 2026 · Agent 365 blog', n: 'Connected agents automatically receive an Entra Agent ID; Purview DLP can block sensitive data before agents process it.' },
@@ -850,6 +1052,8 @@ const SRC = {
   I5: { k: 'i', t: 'Ignite 2026: What\'s new in Microsoft Defender & Sentinel', u: 'https://techcommunity.microsoft.com/blog/microsoftthreatprotectionblog/ignite-2026-whats-new-in-microsoft-defender--sentinel/4569975', ev: 'Ignite 2026 · Defender blog', n: 'Agent posture for Bedrock, Vertex AI, Gemini and Claude in the same AI agent inventory as Foundry agents (preview).' },
   I6: { k: 'i', t: 'Security for the agentic era, powered by Microsoft Perception', u: 'https://www.microsoft.com/en-us/security/blog/2026/11/17/security-for-the-agentic-era-powered-by-microsoft-perception/', ev: 'Ignite 2026 · Microsoft Security blog', n: 'Discovered agents get an Entra Agent ID and Conditional Access; task-scoped Entra permissions; Defender and Purview DLP protect runtime.' },
   I7: { k: 'i', t: 'Discovery to Execution: Scaling Agents with Toolboxes and Routines', u: 'https://devblogs.microsoft.com/foundry/toolbox-build-26/', ev: 'Build 2026 (June) · context', n: 'Guardrails integrate with Toolbox to govern tool inputs and outputs.' },
+  I8: { k: 'i', t: 'Build and manage business processes with Microsoft Copilot Studio', u: 'https://www.microsoft.com/en-us/copilot/blog/copilot-studio/build-and-manage-business-processes-with-microsoft-copilot-studio/', ev: 'Ignite 2026 · Copilot Studio blog', n: 'Agent accounts enter public preview in December; agents built in Cowork or Code live in Copilot Studio under IT governance (preview).' },
+  I9: { k: 'i', t: 'Enterprise AI Controls and agent control plane now generally available', u: 'https://github.blog/changelog/2026-02-26-enterprise-ai-controls-agent-control-plane-now-generally-available/', ev: 'GitHub changelog (Feb 2026) · context', n: 'Agent audit logs with actor_is_agent, an enterprise MCP allowlist and enterprise-wide custom agent definitions.' },
   L1: { k: 'l', t: 'Built-in policy definitions for Foundry Tools', u: ML + 'azure/ai-services/policy-reference' },
   L2: { k: 'l', t: 'Microsoft Foundry governance (formerly Control Plane)', u: ML + 'azure/foundry/control-plane/overview' },
   L3: { k: 'l', t: 'Monitor AI governance and compliance in Microsoft Foundry', u: ML + 'azure/foundry/control-plane/how-to-manage-compliance-security' },
@@ -883,6 +1087,47 @@ const SRC = {
   L31: { k: 'l', t: 'Agent settings: agent management rules', u: ML + 'microsoft-agent-365/admin/agent-settings' },
   L32: { k: 'l', t: 'Policy templates in Microsoft Agent 365', u: ML + 'microsoft-agent-365/admin/policy-template' },
   L33: { k: 'l', t: 'Shadow AI in the Microsoft 365 admin center (Frontier preview)', u: ML + 'microsoft-agent-365/admin/agent-shadow-ai' },
+  L34: { k: 'l', t: 'What\'s new in Copilot Studio', u: ML + 'microsoft-copilot-studio/whats-new' },
+  L35: { k: 'l', t: 'Security and governance in Copilot Studio (Agent 365 onboarding)', u: ML + 'microsoft-copilot-studio/security-and-governance' },
+  L36: { k: 'l', t: 'Control which knowledge sources makers can add (Copilot Studio)', u: ML + 'microsoft-copilot-studio/choose-knowledge-sources' },
+  L37: { k: 'l', t: 'Microsoft Entra Agent IDs for Copilot Studio agents', u: ML + 'microsoft-copilot-studio/admin-use-entra-agent-identities' },
+  L38: { k: 'l', t: 'Publish Foundry agents to Microsoft Copilot and Microsoft Teams', u: ML + 'azure/foundry/agents/how-to/publish-copilot' },
+  L39: { k: 'l', t: 'Microsoft Agent 365 integration with Foundry', u: ML + 'azure/foundry/agents/concepts/agent-365-integration' },
+  L40: { k: 'l', t: 'Configure and share your Foundry agent (stable endpoint)', u: ML + 'azure/foundry/agents/how-to/configure-agent' },
+  L41: { k: 'l', t: 'Add a Foundry agent as a connected agent in Copilot Studio', u: ML + 'microsoft-copilot-studio/agents-experience/add-agent-foundry' },
+  L42: { k: 'l', t: 'Managed governance in Power Platform: environment groups and rules', u: ML + 'power-platform/admin/managed-governance' },
+  L43: { k: 'l', t: 'Configure data policies for agents (Copilot Studio)', u: ML + 'microsoft-copilot-studio/admin-data-loss-prevention' },
+  L44: { k: 'l', t: 'Limit sharing in Managed Environments (agent sharing rules)', u: ML + 'power-platform/admin/managed-environment-sharing-limits' },
+  L45: { k: 'l', t: 'Secure your Copilot Studio projects (VNet, IP firewall, continuous access evaluation)', u: ML + 'microsoft-copilot-studio/guidance/sec-gov-phase3' },
+  L46: { k: 'l', t: 'Admin controls for GitHub Copilot: AI Controls and the MCP server allowlist', u: ML + 'visualstudio/ide/visual-studio-github-copilot-admin' },
+  L47: { k: 'l', t: 'Custom agents for GitHub Copilot (.github/agents)', u: ML + 'visualstudio/ide/copilot-specialized-agents' },
+  L48: { k: 'l', t: 'Environment groups (Power Platform)', u: ML + 'power-platform/admin/environment-groups' },
+  L49: { k: 'l', t: 'IP firewall in Power Platform environments', u: ML + 'power-platform/admin/ip-firewall' },
+  L50: { k: 'l', t: 'Analytics overview (Copilot Studio)', u: ML + 'microsoft-copilot-studio/analytics-overview' },
+  L51: { k: 'l', t: 'Data, privacy, and security for web search in Microsoft 365 Copilot', u: ML + 'copilot/microsoft-365/manage-public-web-access' },
+  L52: { k: 'l', t: 'Restrict discovery of SharePoint sites and content (Restricted Content Discovery)', u: ML + 'sharepoint/restricted-content-discovery' },
+  L53: { k: 'l', t: 'Restrict SharePoint site access to members of a group (Restricted Access Control)', u: ML + 'sharepoint/restricted-access-control' },
+  L54: { k: 'l', t: 'Data access governance reports (SharePoint)', u: ML + 'sharepoint/data-access-governance-reports' },
+  L55: { k: 'l', t: 'Manage agents in the Microsoft 365 admin center', u: ML + 'microsoft-365/admin/manage/manage-copilot-agents-integrated-apps' },
+  L56: { k: 'l', t: 'Data Security Posture Management for AI (Microsoft Purview)', u: ML + 'purview/dspm-for-ai' },
+  L57: { k: 'l', t: 'Microsoft Purview DLP for Microsoft 365 Copilot and Cowork', u: ML + 'purview/dlp-microsoft365-copilot-location-learn-about' },
+  L58: { k: 'l', t: 'Conditional Access for agent identities (Microsoft Entra)', u: ML + 'entra/identity/conditional-access/agent-id' },
+  L59: { k: 'l', t: 'Managed Environments overview (Power Platform)', u: ML + 'power-platform/admin/managed-environment-overview' },
+  L60: { k: 'l', t: 'Restricted SharePoint Search', u: ML + 'sharepoint/restricted-sharepoint-search' },
+  L61: { k: 'l', t: 'Configure user authentication in Copilot Studio', u: ML + 'microsoft-copilot-studio/configuration-end-user-authentication' },
+  I10: { k: 'i', t: 'Latest enhancements for Copilot security, management, and analytics', u: 'https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/latest-enhancements-for-copilot-security-management-and-analytics/4508476', ev: 'Microsoft 365 Copilot blog (April 2026) · context', n: 'DLP restricts prompts with sensitive information types (GA); Purview oversharing and DLP signals surface in the Microsoft 365 admin center.' },
+  I11: { k: 'i', t: 'What\'s new in Copilot Studio: April 2026', u: 'https://www.microsoft.com/en-us/copilot/blog/copilot-studio/new-and-improved-agent-governance-intelligent-workflows-and-connected-app-experiences/', ev: 'Copilot Studio blog (April 2026) · context', n: 'Agent 365 as the control plane for Copilot Studio agents; sharing with Editor and Viewer permissions.' },
+  G1: { k: 'g', t: 'Managing policies and features for GitHub Copilot in your enterprise', u: GD + 'copilot/how-tos/administer-copilot/manage-for-enterprise/manage-enterprise-policies' },
+  G2: { k: 'g', t: 'Configuring access to AI models in GitHub Copilot', u: GD + 'copilot/how-tos/copilot-on-github/set-up-copilot/configure-access-to-ai-models' },
+  G3: { k: 'g', t: 'About third-party coding agents (public preview)', u: GD + 'copilot/concepts/agent-capabilities/about-agents/about-third-party-coding-agents' },
+  G4: { k: 'g', t: 'Customizing or disabling the firewall for GitHub Copilot', u: GD + 'copilot/how-tos/copilot-on-github/customize-copilot/customize-the-firewall' },
+  G5: { k: 'g', t: 'Restrict MCP server access based on a registry (public preview)', u: GD + 'copilot/how-tos/administer-copilot/manage-mcp-usage/restrict-based-on-registry' },
+  G6: { k: 'g', t: 'Excluding content from GitHub Copilot', u: GD + 'copilot/how-tos/configure-content-exclusion/exclude-content-from-copilot' },
+  G7: { k: 'g', t: 'Reviewing audit logs for GitHub Copilot', u: GD + 'copilot/how-tos/administer-copilot/manage-for-enterprise/review-audit-logs' },
+  G8: { k: 'g', t: 'Adding repository custom instructions for GitHub Copilot', u: GD + 'copilot/how-tos/copilot-on-github/customize-copilot/add-custom-instructions/add-repository-instructions' },
+  G9: { k: 'g', t: 'About push protection', u: GD + 'code-security/concepts/secret-security/push-protection' },
+  G10: { k: 'g', t: 'About rulesets', u: GD + 'repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets' },
+  G11: { k: 'g', t: 'GitHub Copilot on GitHub.com: from questions to reviewed pull requests', u: GD + 'copilot/concepts/copilot-surfaces/copilot-on-github' },
 };
 const SRC_USE = {};
 const ids = (v) => (Array.isArray(v) ? v : String(v || '').split(',')).map((s) => s.trim()).filter((s) => SRC[s]);
@@ -904,6 +1149,7 @@ const ROLL_SRC = ['L23', 'L14', 'L23', 'L3'];
 /* ================= data ================= */
 const ALTS = [
   { k: 'a30', t: '30,000 ft', tag: 'Tenant', name: 'Agent 365 · Entra · Purview · Defender', q: 'Which agents exist, who are they, what can they touch?', sec: '30,000 ft', lab: '30k' },
+  { k: 'a20', t: '20,000 ft', tag: 'Planes', name: 'Foundry · Copilot Studio · M365 Copilot · GitHub', q: 'Where is each agent built, and what does each plane control?', sec: '20,000 ft', lab: '20k' },
   { k: 'a10', t: '10,000 ft', tag: 'Scope', name: 'Management groups · Foundry governance', q: 'Where do the rules apply, and how compliant is the fleet?', sec: '10,000 ft', lab: '10k' },
   { k: 'a5', t: '5,000 ft', tag: 'Policy', name: '30 Azure Policy built-ins for Foundry', q: 'Which configurations are allowed?', sec: '5,000 ft', lab: '5k' },
   { k: 'a1', t: '1,000 ft', tag: 'Resource', name: 'Network · identity · keys · gateway · logs', q: 'How is each AI resource built?', sec: '1,000 ft', lab: '1k' },
@@ -1003,6 +1249,7 @@ function setCur(t, force) {
   const r = RAIL.find((x) => x.sec === t); const an = $('#altNow');
   an.className = r.k; an.textContent = t === 'Operating model' || t === 'Discussion' || t === 'Overview' ? t : `${t} · ${r.cap}`;
   renderNotes();
+  document.body.classList.toggle('vshow', t === '20,000 ft' || (typeof VSECS !== 'undefined' && VSECS.includes(t)));
   runActive(t === 'Ground level');
 }
 
@@ -1259,7 +1506,7 @@ function renderAgent() {
 
 /* ================= Agent 365 portal ================= */
 // Status per capability: Ignite 2026 Agent 365 blog (I2) and Microsoft Learn pages. ga · pv (preview) · fr (Frontier preview) · soon.
-const SPL = { ga: 'GA', pv: 'Preview', fr: 'Frontier', soon: 'Coming' };
+const SPL = { ga: 'GA', pv: 'Preview', fr: 'Frontier', soon: 'Coming', ex: 'Context' };
 const sp = (k) => `<span class="sp ${k}">${SPL[k]}</span>`;
 const PSHOT = [
   { id: 'overview', t: 'Overview', st: 'ga', src: 'L25,I2', ses: 'LTG1171', path: 'Agents › Overview', pts: [
@@ -1384,6 +1631,338 @@ function renderPortal() {
 }
 $('#lbox').onclick = () => $('#lbox').classList.remove('on');
 document.addEventListener('keydown', (e) => { if (e.key === 'Escape') $('#lbox').classList.remove('on'); });
+
+/* ================= 20,000 ft build planes ================= */
+const PLANES = [
+  { id: 'fdy', t: 'Microsoft Foundry', sh: 'Foundry', i: 'layers', c: '#0F6CBD', who: 'Pro-code: hosted and prompt agents, models, tools', pt: 'ai.azure.com · Azure Policy',
+    nd: { b: ['Pro-code developer', 'Foundry portal, SDK, CLI'], a: ['Foundry agent', 'prompt or hosted'], u: ['Apps · Teams · Copilot', 'who calls the agent'], k: ['Foundry IQ · AI Search', 'knowledge and grounding'], t: ['Toolbox · MCP · APIs', 'what the agent can call'] } },
+  { id: 'cps', t: 'Copilot Studio', sh: 'Copilot Studio', i: 'workflow', c: '#0B7A75', who: 'Low-code makers: agents, workflows, apps', pt: 'Power Platform admin center',
+    nd: { b: ['Maker', 'Copilot Studio, Cowork, CLI'], a: ['Copilot Studio agent', 'agents, workflows, apps'], u: ['Teams · Copilot · web', 'who talks to the agent'], k: ['Knowledge sources', 'SharePoint, OneDrive, web'], t: ['Connectors · MCP', 'and computer use'] } },
+  { id: 'm365', t: 'Microsoft 365 Copilot', sh: 'M365 Copilot', i: 'sparkles', c: '#C2410C', who: 'Everyone: Cowork, Code, Autopilot, plugins', pt: 'Microsoft 365 admin center',
+    nd: { b: ['Everyone', 'Cowork, Code, Agent Builder'], a: ['Copilot · Autopilot', 'agents and apps'], u: ['Colleagues in Teams', '@mention, chat, workspaces'], k: ['Work IQ · Microsoft 365 data', 'mail, files, meetings'], t: ['Plugins · skills · MCP', 'what Copilot can call'] } },
+  { id: 'gh', t: 'GitHub Copilot', sh: 'GitHub', i: 'git-branch', c: '#24292F', who: 'Developers: coding and cloud agents', pt: 'Enterprise settings → AI Controls',
+    nd: { b: ['Developers', 'IDE, CLI, GitHub app'], a: ['Coding & cloud agents', 'Copilot agent sessions'], u: ['Issues · pull requests', 'where work is assigned'], k: ['Repos · IQ context', 'code and business context'], t: ['MCP servers · tools', 'allowlisted by admins'] } },
+];
+// Each row: a concern, its icon, the shared control band (cols a..b) and, per plane, controls in place (b) and Ignite 2026 additions (n): [status, text, sources].
+const PROWS = [
+  { t: 'Identity', i: 'fingerprint', band: [0, 2, '#5B2E91', 'Microsoft Entra Agent ID', 'one identity type across three planes', 'L39,L37,I1'], cells: [
+    { b: [['ga', 'Entra agent identity per agent', 'L39']], n: [] },
+    { b: [['ga', 'Agent ID for every new agent', 'L34,L37']], n: [['pv', 'Agent accounts: mailbox, Teams', 'I8']] },
+    { b: [], n: [['fr', 'Autopilot: its own agent ID', 'I1'], ['pv', 'Entra Agent ID for Autopilot', 'I1']] },
+    { b: [['ex', 'Audit flags agent actions', 'I9']], n: [] },
+  ] },
+  { t: 'Data', i: 'file-lock', band: [0, 2, '#0E700E', 'Microsoft Purview', 'labels, DLP and audit follow the data', 'L18,L19,I1'], cells: [
+    { b: [['ga', 'AI Search honours labels', 'L19']], n: [['ga', 'SharePoint source keeps permissions', 'I1']] },
+    { b: [['ga', 'Environments + connector DLP', 'L35'], ['ga', 'Allowed knowledge sources', 'L36']], n: [] },
+    { b: [], n: [['pv', 'DLP on unlabeled grounding files', 'I1'], ['fr', 'Business plugins: labels, audit', 'I1']] },
+    { b: [], n: [['ga', 'Permission-aware IQ context', 'I1']] },
+  ] },
+  { t: 'Tools', i: 'plug', band: [0, 3, '#3B4CCA', 'Microsoft IQ', 'shared context, plugins, skills and tools (GA)', 'I1'], cells: [
+    { b: [['ex', 'AI Gateway: MCP rate limits', 'L21']], n: [['pv', 'Toolbox + tool policies', 'I4,L7']] },
+    { b: [['ga', 'Foundry connected agents', 'L41'], ['pv', 'Expose as MCP or A2A', 'L34']], n: [['pv', 'Studio MCP and CLI', 'I8']] },
+    { b: [], n: [['ga', 'Plugins & skills by group', 'I2'], ['pv', 'Work IQ policies + approval', 'I1'], ['pv', 'Gateway MCP servers', 'I2']] },
+    { b: [['ex', 'Enterprise MCP allowlist', 'I9']], n: [] },
+  ] },
+  { t: 'Safety', i: 'shield-check', band: [0, 1, '#C4314B', 'Microsoft Defender', 'AI posture and threat protection', 'L22,I2'], cells: [
+    { b: [['ga', 'Guardrails + content filters', 'L8']], n: [['ga', 'Hosted-agent egress rules', 'I3'], ['ga', 'Multi-turn evals + insights', 'I1']] },
+    { b: [['ga', 'Content moderation per prompt', 'L34'], ['ga', 'Image + URL controls', 'L34']], n: [] },
+    { b: [], n: [['fr', 'Copilot Code sandboxes', 'I1']] },
+    { b: [], n: [['ga', 'Modernization rulebooks', 'I1'], ['pv', 'MDASH code security', 'I1']] },
+  ] },
+  { t: 'Lifecycle', i: 'coins', band: [0, 2, '#5B2E91', 'Agent 365 registry', 'one inventory: synced, onboarded or native', 'L39,L35,L26'], cells: [
+    { b: [['ga', 'Azure Policy at deploy', 'L1'], ['ga', 'M365 approves org-wide publish', 'L38']], n: [['pv', 'Deploy to your own AKS', 'I1']] },
+    { b: [['ga', 'Inventory: API, Resource Graph', 'L34'], ['ga', 'Copilot Credits billing', 'L34']], n: [['pv', 'Cowork & Code agents land here', 'I8']] },
+    { b: [['ga', 'Admin approval + registry', 'L26']], n: [['ga', 'Copilot Managed Runtime', 'I1'], ['fr', 'Business Analytics', 'I2'], ['soon', 'Action center', 'I2']] },
+    { b: [['ex', 'Enterprise custom agents', 'I9']], n: [] },
+  ] },
+];
+// How agents move between planes: from, to, label, status, sources, added at Ignite.
+const PFLOW = [
+  [0, 1, 'Connected agent', 'ga', 'L41', 0],
+  [0, 2, 'Publish to Teams & Copilot · guardrails travel', 'ga', 'L38,L40', 0],
+  [2, 1, 'Cowork & Code agents → Studio', 'pv', 'I8', 1],
+  [3, 1, 'Build Studio agents in GitHub', 'pv', 'I8', 1],
+];
+/* --- 20,000 ft: plane tabs + control diagram; the chosen plane carries down every altitude --- */
+let vert = 'fdy', pZone = {}, pPre = false;
+const PJ = () => PLANES.findIndex((p) => p.id === vert);
+const ZPOS = [[440, 150], [612, 168], [612, 306], [268, 306], [268, 168]]; // identity, data, tools, safety, lifecycle
+const CHIPX = [515, 665, 792, 372, 242]; // identity, data, tools, safety, lifecycle: left-to-right over their zones
+const covers = (r, j) => r.band[0] <= j && j <= r.band[1];
+function renderPlanes() {
+  const j = PJ(), p = PLANES[j];
+  const nIg = (k) => PROWS.reduce((a, r) => a + r.cells[k].n.length, 0);
+  if (pZone[vert] === undefined) { let best = 0; PROWS.forEach((r, i) => { if (r.cells[j].n.length > PROWS[best].cells[j].n.length) best = i; }); pZone[vert] = best; }
+  const z = pZone[vert];
+  $('#ptabs2').innerHTML = PLANES.map((q, k) => `<button class="ptab2 ${k === j ? 'on' : ''}" data-v="${q.id}" style="--pc:${q.c}"><span class="ii">${ico(q.i)}</span><span><b>${q.t}</b><small>${q.pt}</small></span><span class="cn2">+${nIg(k)} Ignite</span></button>`).join('')
+    + `<div class="seg2"><button data-pre="0" class="${pPre ? '' : 'on'}">With Ignite 2026</button><button data-pre="1" class="${pPre ? 'on' : ''}">Before Ignite</button></div>`;
+  $$('#ptabs2 .ptab2').forEach((b) => b.onclick = () => setVert(b.dataset.v));
+  $$('#ptabs2 .seg2 button').forEach((b) => b.onclick = () => { pPre = b.dataset.pre === '1'; renderPlanes(); changed(); });
+  const fl = PFLOW.filter(([f, t]) => f === j || t === j).filter((x) => !(pPre && x[5]));
+  $('#pconn').innerHTML = fl.length ? '<span>Connects to the other planes:</span>' + fl.map(([f, t, l, s, src, ig]) => { const o = f === j ? PLANES[t] : PLANES[f]; return `<span class="fc ${ig ? 'ig' : ''}" style="--fc:${o.c}">${f === j ? '→' : '←'} <b>${o.sh}</b> ${l}${sp(s)}${cite(src, '20,000 ft')}</span>`; }).join('') : '<span>No direct connections to the other planes.</span>';
+  const N = p.nd, node = (k, x, y, w, h, i, cls = '') => `<div class="pdn ${cls}" style="left:${x}px;top:${y}px;width:${w}px;height:${h}px;--pc:${p.c}"><b>${ico(i)}${N[k][0]}</b>${N[k][1]}</div>`;
+  let h = '<svg><defs><marker id="pda" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#9AA8BA"/></marker></defs>'
+    + ['M192,123 C270,123 270,222 345,222', 'M192,353 C270,353 270,256 345,256', 'M535,222 C610,222 610,123 688,123', 'M535,256 C610,256 610,353 688,353'].map((d, i) => `<path d="${d}" fill="none" stroke="#B9C4D3" stroke-width="2" marker-end="url(#pda)" ${i === 1 ? 'marker-start="url(#pda)"' : ''}/>`).join('');
+  PROWS.forEach((r, i) => { if (!covers(r, j)) return; const [zx, zy] = ZPOS[i], cx = CHIPX[i], my = (40 + zy) / 2; h += `<path d="M${cx},38 C${cx},${my} ${zx},${my} ${zx},${zy - 23}" fill="none" stroke="${r.band[2]}" stroke-width="1.6" stroke-dasharray="4 4" opacity=".7"/>`; });
+  h += '</svg>';
+  h += `<div class="pten"><div class="tl">Enterprise layer<small>Agent 365 and Microsoft Security</small></div></div>`
+    + PROWS.map((r, i) => `<span class="tch ${covers(r, j) ? '' : 'off'}" style="left:${CHIPX[i]}px;--bc:${r.band[2]}" title="${covers(r, j) ? r.band[4] : 'Doesn\'t reach ' + p.sh}">${r.band[3]}</span>`).join('');
+  h += node('b', 16, 92, 176, 62, 'user-round') + node('u', 16, 322, 176, 62, 'users-round') + node('a', 345, 196, 190, 86, p.i, 'ag') + node('k', 688, 92, 176, 62, 'file-lock') + node('t', 688, 322, 176, 62, 'plug');
+  h += PROWS.map((r, i) => { const c = r.cells[j], [x, y] = ZPOS[i]; return `<button class="pz ${c.n.length ? 'ig' : ''} ${!c.b.length && !c.n.length ? 'none' : ''} ${z === i ? 'on' : ''}" data-z="${i}" style="left:${x}px;top:${y}px;--pc:${p.c}">${c.n.length ? `<span class="plus">+${c.n.length}</span>` : ''}<span class="zl">${ico(r.i)}${r.t}</span><span class="dots">${c.b.map(() => '<span class="dot"></span>').join('')}${c.n.map(() => '<span class="dot n"></span>').join('')}</span></button>`; }).join('');
+  const box = $('#pdBox'); box.innerHTML = h; fillIcons(box);
+  $$('#pdBox .pz').forEach((b) => b.onclick = () => { pZone[vert] = +b.dataset.z; renderPlanes(); changed(); });
+  const r = PROWS[z], c = r.cells[j];
+  const li = ([s, x, src], ig) => `<div class="li ${ig ? 'ig' : ''}">${ig || s !== 'ga' ? sp(s) : ''}${x}${cite(src, '20,000 ft')}</div>`;
+  const pd = $('#pdp'); pd.style.setProperty('--pc', p.c); pd.classList.toggle('pre', pPre);
+  pd.innerHTML = `<div class="kick" style="--c:${p.c}">${p.t}</div><h4>${ico(r.i)}${r.t}</h4>`
+    + (covers(r, j) ? `<div class="ent"><b>Enterprise layer: ${r.band[3]}</b>, ${r.band[4]}.${cite(r.band[5], '20,000 ft')}</div>` : `<div class="ent off">No shared enterprise control here: governed in ${p.pt}.</div>`)
+    + `<div class="k2">In place</div>${c.b.length ? c.b.map((x) => li(x, 0)).join('') : '<p class="none">Nothing before Ignite.</p>'}`
+    + `<div class="igs"><div class="k2" style="color:${p.c}">Added at Ignite 2026</div>${c.n.length ? c.n.map((x) => li(x, 1)).join('') : '<p class="none">No Ignite change here.</p>'}</div>`
+    + (Z20[vert][z] ? (() => { const id = Z20[vert][z], s = XS[id]; return `<button class="pdshot" data-shot="${id}"><img src="${SHOTS[id] || ''}" alt="${s.t}"><span>${ico('camera')}<b>See it:</b> ${s.t}</span></button>`; })() : '')
+    + `<button class="pzin" data-go="${ZIN[z]}">${ico('zoom-in')}Zoom in: ${r.t.toLowerCase()} at ${ZIN[z]}</button>`;
+  $$('#pdp [data-shot]').forEach((b) => b.onclick = () => openShot(b.dataset.shot));
+  $$('#pdp [data-go]').forEach((b) => b.onclick = () => go(b.dataset.go));
+  fillIcons(pd); fillIcons($('#ptabs2'));
+  $('#pdia').classList.toggle('pre', pPre);
+  fitPd();
+}
+function fitPd() { const fit = $('#pdFit'); if (!fit) return; const s = Math.min(1, fit.clientWidth / 880); $('#pdBox').style.transform = `scale(${s})`; fit.style.height = (410 * s) + 'px'; }
+addEventListener('resize', fitPd);
+
+// What each lower altitude means for the other planes (summary until each full view is built).
+const VSECS = ['10,000 ft', '5,000 ft', '1,000 ft', '500 ft', 'Agent types', 'Guardrail map', 'Ground level'];
+const FDY_ONLY = { 'Agent types': 'Agent types (prompt, hosted, toolbox) are a Foundry concept', 'Guardrail map': 'The guardrail map shows where Foundry guardrails attach' };
+const VQ = { '10,000 ft': 'Where do the rules apply?', '5,000 ft': 'Which configurations are allowed?', '1,000 ft': 'How is the place agents run set up?', '500 ft': 'What may each agent do?', 'Ground level': 'What happens on a single request?' };
+// Screenshots that make each control concrete. o: where the image comes from. All show demo or sample tenants.
+const XS = {
+  fdy_guard: { t: 'A guardrail, risk by risk', d: 'Each risk lists where it intervenes (user input, tool input, tool output, output) and its action: here, Block.', host: 'Microsoft Foundry', path: 'Build › Guardrails', st: 'ga', src: 'I7,L8', o: 'Foundry blog (Build 2026), demo project' },
+  fdy_tbx: { t: 'A toolbox with a guardrail attached', d: 'One MCP endpoint for every tool in the toolbox. The Policy section attaches a guardrail to each tool call.', host: 'Microsoft Foundry', path: 'Build › Tools › Toolbox', st: 'pv', src: 'I7,I4,L7', o: 'Foundry blog (Build 2026), demo project' },
+  def_agent: { t: 'Defender flags an agent with no guardrails', d: 'Risk indicators (High Blast Radius, No Guardrails), attack surface, tools and the recommendation "Use guardrails for published AI agent". This agent runs on Amazon Bedrock.', host: 'Microsoft Defender', path: 'AI Agents › agent', st: 'pv', src: 'I5', o: 'Ignite 2026 Defender blog, demo tenant' },
+  cps_acct: { t: 'Give the agent its own account', d: 'The maker offers the agent a Microsoft 365 identity: people can email it, invite it to meetings and @mention it.', host: 'Copilot Studio', path: 'Agent › Agent account', st: 'pv', src: 'I8', o: 'Ignite 2026 Copilot Studio blog, demo tenant' },
+  cps_ident: { t: 'Create the agent identity', d: 'Name, email and job title. The agent then shows up in Microsoft 365 like a colleague.', host: 'Copilot Studio', path: 'Agent › Create an agent identity', st: 'pv', src: 'I8', o: 'Ignite 2026 Copilot Studio blog, demo tenant' },
+  cps_envgrp: { t: 'Environment groups carry the rules', d: 'Finance and HR groups each publish rules once (sharing limits, AI-generated descriptions, data retention) for every environment inside.', host: 'Power Platform admin center', path: 'Environment groups', st: 'ga', src: 'L48', o: 'Microsoft Learn diagram' },
+  cps_grplock: { t: 'Locked: managed by the group', d: 'Inside an environment, a setting governed by its group can\'t be changed. The admin changes it on the group.', host: 'Power Platform admin center', path: 'Environment › Settings', st: 'ga', src: 'L48', o: 'Microsoft Learn' },
+  cps_dlperr: { t: 'A data policy stops publishing', d: 'The maker can\'t publish until the agent complies with the organization\'s data policy, with a link to the admin.', host: 'Copilot Studio', path: 'Publish status', st: 'ga', src: 'L43', o: 'Microsoft Learn' },
+  cps_http: { t: 'HTTP requests blocked', d: 'The topic checker flags a step the data policy blocks: "HTTP requests are blocked by your org\'s policies".', host: 'Copilot Studio', path: 'Topic checker', st: 'ga', src: 'L43', o: 'Microsoft Learn' },
+  cps_cost: { t: 'Cost management', d: 'Prepaid and pay-as-you-go Copilot Credit use, and the users and groups driving it.', host: 'Copilot Studio', path: 'Cost management', src: 'I8', o: 'Ignite 2026 Copilot Studio blog, demo tenant' },
+  cps_sharing: { t: 'Sharing limits for agents', d: 'Who may grant Editor or Viewer access to Copilot Studio agents, whether security groups count, and how many people.', host: 'Power Platform admin center', path: 'Managed Environment › Manage sharing', st: 'ga', src: 'L44', o: 'Microsoft Learn' },
+  cps_share: { t: 'Share as end user, analyst or viewer', d: 'The maker picks what each person may do: use the agent, view its analytics, or view it without editing.', host: 'Copilot Studio', path: 'Share', src: 'I11', o: 'Copilot Studio blog (April 2026), demo tenant' },
+  cps_monitor: { t: 'Monitor one agent', d: 'An AI summary of sessions, escalations and feedback, so owners see drift early.', host: 'Copilot Studio', path: 'Monitor › Summary', src: 'L50', o: 'Microsoft Learn' },
+  ca_agents: { t: 'Conditional Access for agents', d: 'Policies target agents by attribute, such as data sensitivity, wherever they were built: Copilot Studio or Microsoft Foundry.', host: 'Microsoft Entra', path: 'Conditional Access', src: 'L58', o: 'Microsoft Learn diagram' },
+  m365_agents: { t: 'Every agent, in one list', d: 'Publisher, availability and channel for each agent. Admins allow, block or assign them to users and groups.', host: 'Microsoft 365 admin center', path: 'Agents › All agents', st: 'ga', src: 'L55,L26', o: 'Microsoft Learn' },
+  m365_rcdset: { t: 'Restrict a site from Copilot', d: '"Restrict content from Microsoft 365 Copilot" sits in each site\'s settings, next to Restricted site access.', host: 'SharePoint admin center', path: 'Active sites › Settings', st: 'ga', src: 'L52', o: 'Microsoft Learn' },
+  m365_dlp: { t: 'A DLP policy for Copilot', d: 'Pick sensitive information types, then stop Copilot processing the content or using web search.', host: 'Microsoft Purview', path: 'Data Loss Prevention › Policies', st: 'ga', src: 'L57,I10', o: 'Microsoft 365 Copilot blog (April 2026), demo tenant' },
+  m365_rcd: { t: 'What users see on a restricted site', d: 'A Restricted marker: content won\'t show up in Copilot responses, SharePoint agents or organization-wide search.', host: 'SharePoint', path: 'Site header', st: 'ga', src: 'L52', o: 'Microsoft Learn' },
+  m365_rac: { t: 'Restricted site access', d: 'Only members of the chosen groups can open the site, even if files were shared more widely.', host: 'SharePoint', path: 'Site access', st: 'ga', src: 'L53', o: 'Microsoft Learn' },
+  m365_overshare: { t: 'Fix oversharing before Copilot finds it', d: 'A data risk assessment lists overshared files; label them or remove sharing links in bulk.', host: 'Microsoft Purview', path: 'Data risk assessments', src: 'L56,I10', o: 'Microsoft 365 Copilot blog (April 2026), demo tenant' },
+  m365_dspm: { t: 'DSPM for AI', d: 'Setup tasks, recommendations and reports for Copilot and other AI interactions.', host: 'Microsoft Purview', path: 'DSPM for AI', st: 'ga', src: 'L56', o: 'Microsoft Learn' },
+  m365_web: { t: 'Users can switch web search off', d: 'When the admin allows web search, users still control it in their chat settings.', host: 'Microsoft 365 Copilot', path: 'Settings › Personalization', st: 'ga', src: 'L51', o: 'Microsoft Learn' },
+  m365_blocked: { t: 'A prompt blocked by DLP', d: 'Copilot declines: "your organization has blocked Copilot from responding to some types of content".', host: 'Microsoft 365 Copilot', path: 'Chat', st: 'ga', src: 'L57,I10', o: 'Microsoft 365 Copilot blog (April 2026), demo tenant' },
+  m365_cites: { t: 'The web query, shown to the user', d: 'When Copilot searches the web, the query it sent appears with the citations.', host: 'Microsoft 365 Copilot', path: 'Sources', st: 'ga', src: 'L51', o: 'Microsoft Learn' },
+  gh_ai: { t: 'AI Controls › Agents', d: 'Enterprise view of agent sessions and available agents; partner agents such as Claude and Codex are allowed by policy.', host: 'GitHub enterprise settings', path: 'AI Controls › Agents', st: 'ex', src: 'I9,G1,G3', o: 'GitHub changelog (Feb 2026)' },
+  gh_fw: { t: 'The cloud agent firewall at work', d: 'Copilot reports which addresses the firewall blocked, and how to allow them.', host: 'GitHub', path: 'Copilot session', st: 'ga', src: 'G4', o: 'GitHub Docs' },
+};
+function openShot(id) { const s = XS[id], lb = $('#lbox'); $('img', lb).src = SHOTS[id]; $('.lcap', lb).textContent = `${s.t} · ${s.host} › ${s.path} · Screenshot: ${s.o}`; lb.classList.add('on'); }
+function seeIt(list, where) {
+  if (!list || !list.length) return '';
+  return `<div class="dx-see"><div class="dx-sh">${ico('camera')}<b>See it in the product</b><span>Hover to find the control, click to enlarge</span></div><div class="dx-sg">${list.map(([id, at]) => { const s = XS[id]; return `<button class="dx-shot" data-shot="${id}" ${at ? `data-at="${at}"` : ''}><span class="im"><img src="${SHOTS[id] || ''}" alt="${s.host}: ${s.t}" loading="lazy"></span><span class="tx"><b>${s.t}</b><span class="dd">${s.d}</span><span class="mt">${s.st ? sp(s.st) : ''}<span>${s.host}</span>${cite(s.src, where)}</span></span></button>`; }).join('')}</div></div>`;
+}
+function wireShots(root) {
+  $$('.dx-shot', root).forEach((b) => {
+    b.onclick = (e) => { if (e.target.closest('.cite')) return; openShot(b.dataset.shot); };
+    const hl = (on) => { if (b.dataset.at) $$(`[data-k="${CSS.escape(b.dataset.at)}"]`, root).forEach((el) => el.classList.toggle('hl', on)); };
+    b.onmouseenter = () => hl(true); b.onmouseleave = () => hl(false);
+  });
+  $$('.dx-cam', root).forEach((b) => b.onclick = (e) => { e.stopPropagation(); openShot(b.dataset.shot); });
+}
+
+// The full descent for the other planes. Item: [status, text, sources, added at Ignite]. shots: [screenshot, component it shows].
+const PD = {
+  '10,000 ft': {
+    cps: { h: 'Tenant → environment groups → environments', sub: 'Rules published on an environment group apply to every environment in it. Settings the group governs are locked below.', trees: [{ l: 'Power Platform admin center', n: [
+      [0, 'Tenant', 'tenant-wide', [['ga', 'Data policies can cover the whole tenant', 'L43']], ''],
+      [1, 'Environment group: Production', 'a folder of environments', [['ga', 'Group rules: sharing limits, generative AI settings, usage insights, backup retention', 'L48,L42'], ['ga', 'IP firewall set for the whole group', 'L49']], 'on'],
+      [2, 'Managed Environment: Finance', 'inherits the group rules', [['ga', 'Group-governed settings are locked here', 'L48'], ['ga', 'Data policy scoped to this environment', 'L43']], 'inh'],
+      [3, 'Copilot Studio agent', 'lives in the environment', [], 'inh']] }],
+      side: [['ga', 'Agent inventory in the admin center, API or Azure Resource Graph', 'L34'], ['ga', 'Weekly usage insights', 'L59'], ['ga', 'Onboard agents to Agent 365', 'L35'], ['pv', 'Agent telemetry export to Application Insights', 'L34']],
+      shots: [['cps_envgrp', 'Environment group: Production'], ['cps_grplock', 'Managed Environment: Finance']] },
+    m365: { h: 'Scoped by people and by content', sub: 'Two trees: <b>who</b> may use which agents, and <b>what</b> Copilot may see. Both start at the tenant and narrow below.', trees: [
+      { l: 'Who · Microsoft 365 admin center', n: [
+        [0, 'Tenant', '', [['ga', 'Allowed agent and plugin types', 'L31,L55'], ['ga', '"Allow web search in Copilot" policy', 'L51']], ''],
+        [1, 'Group: Finance users', 'users and groups', [['ga', 'Agents assigned to users and groups', 'L55'], ['ga', 'Plugins and skills by group', 'I2', 1]], 'on'],
+        [2, 'User', 'licensed', [], 'inh']] },
+      { l: 'What · SharePoint admin center', n: [
+        [0, 'Tenant', '', [['ga', 'Restricted SharePoint Search: up to 100 allowed sites', 'L60']], ''],
+        [1, 'Site', '', [['ga', 'Restricted Content Discovery', 'L52'], ['ga', 'Restricted Access Control', 'L53']], 'on'],
+        [2, 'File', '', [['ga', 'Sensitivity label', 'L57']], 'inh']] }],
+      side: [['ga', 'Agent 365 registry and Agent Map', 'L26,L28'], ['ga', 'Oversharing reports for SharePoint', 'L54'], ['fr', 'Agent 365 Business Analytics', 'I2', 1]],
+      shots: [['m365_agents', 'Group: Finance users'], ['m365_rcdset', 'Site']] },
+    gh: { h: 'Enterprise → organizations → repositories', sub: 'AI Controls set the ceiling for the enterprise. Each policy is either fixed there or delegated to organization owners.', trees: [{ l: 'GitHub enterprise settings', n: [
+      [0, 'Enterprise', 'AI Controls', [['ga', 'Policies for the whole enterprise, or delegated to organizations', 'G1'], ['ex', 'Enterprise custom agents', 'I9']], 'on'],
+      [1, 'Organization', 'inherits or decides', [['ga', 'Allowed AI models', 'G2'], ['ga', 'Content exclusion for the organization', 'G6']], 'inh'],
+      [2, 'Repository', '', [['ga', 'Content exclusion for the repository', 'G6'], ['ga', 'Cloud agent firewall', 'G4']], 'inh'],
+      [3, 'Agent session', 'one task', [], 'inh']] }],
+      side: [['ex', 'Audit log marks agent actions (actor_is_agent)', 'I9'], ['ex', 'Agent sessions from the last 24 hours', 'I9'], ['ga', 'Audit log keeps 180 days; stream it to a SIEM', 'G7']],
+      shots: [['gh_ai', 'Enterprise']] },
+  },
+  '5,000 ft': {
+    cps: { h: 'Data policies and environment rules', sub: 'Set in the Power Platform admin center. Data policies decide what an agent may connect to; group rules decide how environments behave.', fams: [
+      ['Data policies', [['ga', 'Connectors grouped as business, non-business or blocked', 'Block', 'L43'], ['ga', 'Block abilities: unauthenticated chat, HTTP requests, channels, event triggers', 'Block', 'L43'], ['ga', 'Require users to sign in', 'Require', 'L61,L43']]],
+      ['Knowledge', [['ga', 'Allowed sources: file upload, SharePoint and OneDrive, public websites', 'Restrict', 'L36']]],
+      ['Environment group rules', [['ga', 'Sharing limits', 'Restrict', 'L48,L44'], ['ga', 'Generative AI settings', 'Restrict', 'L48'], ['ga', 'Usage insights and backup retention', 'Report', 'L48']]],
+      ['Network', [['ga', 'IP firewall, with an audit-only mode', 'Block', 'L49']]],
+      ['Content', [['ga', 'Content moderation sensitivity per prompt', 'Restrict', 'L34'], ['ga', 'Images and embedded URLs in responses', 'Restrict', 'L34']]],
+      ['Cost', [['ga', 'Copilot Credits for usage-based billing', 'Report', 'L34']]]],
+      shots: [['cps_dlperr', 'Data policies'], ['cps_http', 'Data policies'], ['cps_cost', 'Cost']] },
+    m365: { h: 'Agent settings, templates and Purview', sub: 'Split across the Microsoft 365 admin center (agents) and the Purview portal (data).', fams: [
+      ['Agent settings', [['ga', 'Allowed agent and plugin types', 'Restrict', 'L31'], ['ga', 'Who may share agents, and how', 'Restrict', 'L31'], ['ga', 'Rules such as blocking ownerless agents without usage', 'Block', 'L31']]],
+      ['Agent 365 policy templates', [['ga', 'Entra, Purview, SharePoint and Defender policies applied at activation', 'Require', 'L32']]],
+      ['Purview DLP for Copilot', [['ga', 'Block prompts with sensitive information types', 'Block', 'L57,I10'], ['ga', 'Skip labeled files and emails', 'Block', 'L57'], ['pv', 'Skip email from external domains', 'Block', 'L57'], ['pv', 'Skip sensitive files, even unlabeled', 'Block', 'I1', 1]]],
+      ['Web & tools', [['ga', '"Allow web search in Copilot" (Cloud Policy)', 'Restrict', 'L51'], ['ga', 'No web search for prompts with sensitive data', 'Block', 'L57'], ['ga', 'Plugins and skills by group', 'Restrict', 'I2', 1], ['pv', 'Work IQ policies and human approval', 'Require', 'I1', 1]]]],
+      shots: [['m365_dlp', 'Purview DLP for Copilot']] },
+    gh: { h: 'AI Controls policies', sub: 'Set at the enterprise or organization. Content exclusion and the firewall add file- and network-level limits.', fams: [
+      ['Copilot features', [['ga', 'Copilot features and clients on or off', 'Restrict', 'G1'], ['ga', 'Allowed AI models', 'Restrict', 'G2']]],
+      ['Agents', [['ga', 'Agent policies in AI Controls › Agents', 'Restrict', 'G1'], ['pv', 'Allow third-party coding agents', 'Restrict', 'G3'], ['ex', 'Enterprise-wide custom agent definitions', 'Require', 'I9']]],
+      ['Tools', [['pv', 'MCP servers allowlisted from a registry', 'Block', 'G5,I9,L46']]],
+      ['Content', [['ga', 'Content exclusion: files Copilot ignores', 'Block', 'G6']]],
+      ['Network', [['ga', 'Firewall for the cloud agent and code review', 'Block', 'G4']]],
+      ['Modernization', [['ga', 'Agent governance rulebooks', 'Require', 'I1', 1]]]],
+      shots: [['gh_ai', 'Agents']] },
+  },
+  '1,000 ft': {
+    cps: { h: 'The Managed Environment', core: ['Managed Environment', 'where Copilot Studio agents live'], lenses: [
+      ['Network', [['ga', 'Connectors run in your virtual network', 'L45'], ['ga', 'IP firewall', 'L49,L59'], ['ga', 'IP cookie binding', 'L59']]],
+      ['Identity', [['ga', 'Entra ID, MFA and continuous access evaluation', 'L45']]],
+      ['Data', [['ga', 'Customer-managed key', 'L45,L59'], ['ga', 'Customer Lockbox', 'L45,L59']]],
+      ['Access', [['ga', 'Sharing limits for Editor and Viewer', 'L44'], ['ga', 'Share with individuals only, not groups', 'L44,L45']]],
+      ['Evidence', [['ga', 'Maker audit logs in Purview', 'L35'], ['pv', 'Agent telemetry to Application Insights', 'L34'], ['ga', 'Weekly usage insights', 'L59']]]],
+      shots: [['cps_sharing', 'Access']] },
+    m365: { h: 'Your Microsoft 365 content', core: ['Your Microsoft 365 content', 'SharePoint, OneDrive, Exchange'], lenses: [
+      ['Discovery', [['ga', 'Restricted SharePoint Search', 'L60'], ['ga', 'Restricted Content Discovery', 'L52']]],
+      ['Access', [['ga', 'Restricted Access Control', 'L53'], ['ga', 'Oversharing reports', 'L54']]],
+      ['Labels', [['ga', 'Sensitivity labels steer DLP for Copilot', 'L57']]],
+      ['Runtime', [['ga', 'Copilot Managed Runtime hosts apps', 'I1', 1], ['fr', 'Copilot Code cloud and local sandboxes', 'I1', 1]]],
+      ['Evidence', [['ga', 'Purview audit and DSPM for AI', 'L56'], ['ga', 'Oversharing risk assessments', 'L56']]]],
+      shots: [['m365_rcd', 'Discovery'], ['m365_rac', 'Access'], ['m365_overshare', 'Evidence'], ['m365_dspm', 'Evidence']] },
+    gh: { h: 'The repository and the agent sandbox', core: ['Repository', 'and the cloud agent sandbox'], lenses: [
+      ['Network', [['ga', 'Firewall on by default, with an allowlist', 'G4']]],
+      ['Context', [['ga', 'Content exclusion', 'G6'], ['ga', 'Repository custom instructions', 'G8']]],
+      ['Agents', [['ga', 'Custom agents in .github/agents', 'L47']]],
+      ['Secrets', [['ga', 'Push protection blocks secrets', 'G9'], ['soon', 'Secret detection in Copilot code review', 'I1', 1]]],
+      ['Review', [['ga', 'Agent work lands as a pull request', 'G11'], ['ga', 'Rulesets protect branches', 'G10']]]],
+      shots: [['gh_fw', 'Network']] },
+  },
+  '500 ft': {
+    cps: { h: 'What each Copilot Studio agent may do', a: 'Set by the admin · Power Platform admin center', b: 'Set by the maker · Copilot Studio', rows: [
+      ['Identity', [['ga', 'Entra Agent ID for every new agent', 'L37,L34']], [['pv', 'Agent account with mailbox and Teams presence (December)', 'I8', 1]]],
+      ['Sign-in', [['ga', 'Data policy can require authentication', 'L61']], [['ga', 'No authentication, Microsoft, or manual', 'L61']]],
+      ['Knowledge', [['ga', 'Allowed knowledge sources', 'L36']], [['ga', 'SharePoint, OneDrive, websites and files', 'L36']]],
+      ['Tools', [['ga', 'Connector data policy', 'L43']], [['ga', 'Connectors and computer use', 'L34'], ['pv', 'Expose the agent as MCP or A2A', 'L34']]],
+      ['Safety', [['ga', 'Image and URL rendering controls', 'L34']], [['ga', 'Content moderation per prompt', 'L34']]],
+      ['Sharing', [['ga', 'Sharing limits', 'L44']], [['ga', 'Share as editor, analyst or viewer', 'L44,I11']]]],
+      shots: [['cps_acct', 'Identity'], ['cps_ident', 'Identity'], ['ca_agents', 'Identity'], ['cps_share', 'Sharing']] },
+    m365: { h: 'Copilot, Cowork and Autopilot', a: 'Set by the admin · Microsoft 365 admin center, Purview', b: 'Set by the user · Copilot, Cowork, Agent Builder', rows: [
+      ['Identity', [['ga', 'Agent 365 template applied at activation', 'L32']], [['fr', 'Autopilot acts under its own agent ID', 'I1', 1]]],
+      ['Knowledge', [['ga', 'Restricted Content Discovery', 'L52']], []],
+      ['Web', [['ga', 'Web search policy per user or group', 'L51']], [['ga', 'Web search toggle where offered', 'L51']]],
+      ['Actions', [['pv', 'Human approval for agent actions', 'I1', 1]], [['fr', 'Autopilot runs recurring work', 'I1', 1]]],
+      ['Plugins', [['ga', 'Plugins and skills by group', 'I2', 1]], [['ga', 'Add agents from the Agent Store', 'L55']]],
+      ['Sharing', [['ga', 'Who may share agents', 'L31']], [['ga', 'Share agents they built', 'L55']]]],
+      shots: [['m365_web', 'Web']] },
+    gh: { h: 'Coding and cloud agents', a: 'Set by the admin · AI Controls', b: 'Set by the developer · repository', rows: [
+      ['Identity', [['ex', 'Audit marks agent actions and the user they act for', 'I9']], []],
+      ['Tools', [['pv', 'MCP registry allowlist', 'G5']], [['ga', 'Personal custom MCP servers', 'G11']]],
+      ['Network', [['ga', 'Firewall at the organization level', 'G4']], [['ga', 'Firewall at the repository level', 'G4']]],
+      ['Instructions', [['ex', 'Enterprise custom agents', 'I9']], [['ga', 'Custom agents and repository instructions', 'L47,G8']]],
+      ['Review', [['ga', 'Rulesets require review before merge', 'G10']], [['ga', 'Request a review from Copilot', 'G11'], ['soon', 'Secret detection in code review', 'I1', 1]]]],
+      shots: [] },
+  },
+  'Ground level': {
+    cps: { h: 'One request: user → agent → connector', steps: [['User signs in', [['ga', 'Authentication mode', 'L61'], ['ga', 'Required by data policy', 'L61']]], ['Orchestrator plans', [['ga', 'Content moderation', 'L34']]], ['Knowledge lookup', [['ga', 'Allowed sources only', 'L36']]], ['Connector call', [['ga', 'Data policy decides', 'L43']]], ['Answer', [['ga', 'Image and URL controls', 'L34']]], ['Evidence', [['ga', 'Purview audit', 'L35'], ['ga', 'Agent 365 observability', 'L35']]]],
+      shots: [['cps_http', 'Connector call'], ['cps_monitor', 'Evidence']] },
+    m365: { h: 'One request: prompt → grounding → answer', steps: [['Prompt', [['ga', 'DLP blocks sensitive prompts', 'L57']]], ['Grounding', [['ga', 'Restricted Content Discovery', 'L52'], ['ga', 'Labeled files skipped', 'L57'], ['pv', 'Unlabeled sensitive files skipped', 'I1', 1]]], ['Web search', [['ga', 'Web search policy', 'L51'], ['ga', 'No web search with sensitive data', 'L57']]], ['Action', [['pv', 'Human approval', 'I1', 1]]], ['Answer', [['ga', 'Web query shown with citations', 'L51']]], ['Evidence', [['ga', 'Purview audit, DSPM for AI', 'L56']]]],
+      shots: [['m365_blocked', 'Prompt'], ['m365_cites', 'Web search']] },
+    gh: { h: 'One request: task → session → pull request', steps: [['Task assigned', [['ga', 'Agents allowed by policy', 'G1']]], ['Session starts', [['ex', 'agent_session.task audit event', 'I9']]], ['Sandbox', [['ga', 'Firewall allowlist', 'G4']]], ['Tools', [['pv', 'Allowlisted MCP servers', 'G5']]], ['Pull request', [['ga', 'Copilot code review', 'G11'], ['ga', 'Rulesets before merge', 'G10']]], ['Evidence', [['ex', 'Audit log with actor_is_agent', 'I9']]]],
+      shots: [['gh_fw', 'Sandbox']] },
+  },
+};
+// Screenshots for Foundry's own sections and for each 20,000 ft zone (identity, data, tools, safety, lifecycle).
+const FSEE = { '500 ft': [['fdy_tbx'], ['ca_agents']], 'Guardrail map': [['fdy_guard'], ['def_agent']] };
+const Z20 = { fdy: ['ca_agents', null, 'fdy_tbx', 'fdy_guard', 'def_agent'], cps: ['cps_acct', 'cps_dlperr', null, 'cps_http', 'cps_cost'], m365: [null, 'm365_dlp', 'm365_web', 'm365_blocked', 'm365_agents'], gh: [null, null, null, 'gh_fw', 'gh_ai'] };
+const ZIN = ['500 ft', '1,000 ft', '5,000 ft', 'Ground level', '10,000 ft'];
+const DXSEQ = ['20,000 ft', '10,000 ft', '5,000 ft', '1,000 ft', '500 ft', 'Ground level', 'Operating model'];
+const go = (t) => { const s = SEC(t); if (s) s.scrollIntoView({ behavior: STATIC ? 'auto' : 'smooth' }); };
+let dxEff = 'all';
+function dxItems(d) {
+  const out = [];
+  (d.trees || []).forEach((t) => t.n.forEach((n) => out.push(...n[3])));
+  (d.side || []).forEach((x) => out.push(x));
+  (d.fams || []).forEach((f) => f[1].forEach(([s, t, , src, ig]) => out.push([s, t, src, ig])));
+  (d.lenses || []).forEach((l) => out.push(...l[1]));
+  (d.rows || []).forEach((r) => out.push(...r[1], ...r[2]));
+  (d.steps || []).forEach((s) => out.push(...s[1]));
+  return out;
+}
+function dxBody(t, d, p) {
+  const it = ([s, x, src, ig]) => `<span class="dx-it ${ig ? 'ig' : ''}">${sp(s)}${x}${cite(src, t)}</span>`;
+  const shotOf = (k) => (d.shots || []).find((x) => x[1] === k);
+  const cam = (k) => { const s = shotOf(k); return s ? `<button class="dx-cam" data-shot="${s[0]}" title="See it: ${XS[s[0]].t}">${ico('camera')}</button>` : ''; };
+  if (d.trees) return `<p class="dx-sub">${d.sub}</p><div class="dx-trees ${d.trees.length > 1 ? 'two' : ''}">${d.trees.map((tr) => `<div><div class="dx-tl">${tr.l}</div>${tr.n.map(([dd, nm, sm, its, st]) => `<div class="dx-node ${st === 'on' ? 'on' : ''}" data-k="${nm}" style="--d:${dd}"><div class="nt">${nm}${sm ? `<small>${sm}</small>` : ''}${cam(nm)}${st === 'on' ? '<span class="tag">Assign here</span>' : st === 'inh' ? '<span class="tag inh">Inherits</span>' : ''}</div>${its.length ? its.map(it).join('') : ''}</div>`).join('')}</div>`).join('')}</div>`;
+  if (d.fams) {
+    const effs = ['all', 'Block', 'Restrict', 'Require', 'Report', 'ig'], lab = { all: 'All', ig: 'Ignite 2026' };
+    const show = ([, , e, , ig]) => dxEff === 'all' || (dxEff === 'ig' ? ig : e === dxEff);
+    return `<p class="dx-sub">${d.sub}</p><div class="dx-effs">${effs.map((e) => `<button data-eff="${e}" class="${dxEff === e ? 'on' : ''}">${lab[e] || e}</button>`).join('')}</div><div class="dx-cat">${d.fams.map(([fn, ps]) => `<div class="dx-fam" data-k="${fn}"><h4>${fn}${cam(fn)}<small>${ps.length}</small></h4>${ps.map((x) => `<div class="dx-pol ${x[4] ? 'ig' : ''} ${show(x) ? '' : 'dim'}"><span class="t">${sp(x[0])}${x[1]}${cite(x[3], t)}</span><span class="eff ${x[2]}">${x[2]}</span></div>`).join('')}</div>`).join('')}</div>`;
+  }
+  if (d.lenses) {
+    const pos = [[0, 2], [67, 2], [0, 64], [67, 64], [33.5, 74]], pts = [[16, 16], [84, 16], [16, 80], [84, 80], [50, 92]];
+    return `<div class="dx-lens"><svg viewBox="0 0 100 100" preserveAspectRatio="none">${pts.map(([x, y]) => `<line x1="50" y1="46" x2="${x}" y2="${y}" stroke="${p.c}" stroke-width=".35" stroke-dasharray="1.2 1" opacity=".6"/>`).join('')}</svg><div class="core"><b>${d.core[0]}</b><small>${d.core[1]}</small></div>${d.lenses.map(([ln, its], i) => `<div class="dx-ln" data-k="${ln}" style="left:${pos[i][0]}%;top:${pos[i][1]}%"><h4>${ln}${cam(ln)}</h4>${its.map(it).join('')}</div>`).join('')}</div>`;
+  }
+  if (d.rows) return `<div class="dx-rows"><div></div><div class="hd">${d.a}</div><div class="hd">${d.b}</div>${d.rows.map(([r, a, b]) => `<div class="rc" data-k="${r}">${r}${cam(r)}</div><div class="cl b" data-k="${r}">${a.length ? a.map(it).join('') : '<span class="none">Nothing to set</span>'}</div><div class="cl" data-k="${r}">${b.length ? b.map(it).join('') : '<span class="none">Nothing to set</span>'}</div>`).join('')}</div>`;
+  if (d.steps) return `<div class="dx-steps">${d.steps.map(([st, its], i) => `<div class="dx-step" data-k="${st}"><div class="sh"><span class="n">${i + 1}</span><b>${st}</b>${cam(st)}</div>${its.map(it).join('')}</div>`).join('')}</div>`;
+  return '';
+}
+function dxSide(t, d, p) {
+  const all = dxItems(d), c = {}; all.forEach((x) => c[x[0]] = (c[x[0]] || 0) + 1); const n = all.length || 1, ig = all.filter((x) => x[3]).length;
+  const K = ['ga', 'pv', 'fr', 'soon', 'ex'], COL = { ga: '#2E9D5B', pv: '#8A5BC4', fr: '#D08A1A', soon: '#9AA8BA', ex: '#C5CFDB' };
+  const fleet = d.side ? `<h5>Fleet view</h5>${d.side.map(([s, x, src, g]) => `<span class="dx-it ${g ? 'ig' : ''}">${sp(s)}${x}${cite(src, t)}</span>`).join('')}` : '';
+  return `<div class="dx-side"><h5>Available today</h5><div class="dx-mix">${K.map((k) => c[k] ? `<i style="width:${c[k] / n * 100}%;background:${COL[k]}"></i>` : '').join('')}</div><div class="dx-mixl">${K.filter((k) => c[k]).map((k) => `<span><b>${c[k]}</b> ${SPL[k]}</span>`).join('')}</div>`
+    + `<h5>Ignite 2026</h5><p>${ig ? `<b style="color:${p.c}">${ig} outlined</b> item${ig > 1 ? 's' : ''} added here.` : 'No Ignite change at this altitude. Everything shown is available today.'}</p>${fleet}<h5>Where it's set</h5><p>${p.pt}</p></div>`;
+}
+function renderStubs() {
+  const p = PLANES[PJ()];
+  VSECS.forEach((t) => {
+    const s = SEC(t); if (!s) return; const w = $('.wrap', s);
+    let st = $('.vstub', w); if (!st) { st = document.createElement('div'); st.className = 'vstub'; w.appendChild(st); }
+    const on = vert !== 'fdy'; s.classList.toggle('vx', on); if (!on) return;
+    st.style.setProperty('--pc', p.c);
+    if (FDY_ONLY[t]) {
+      st.innerHTML = `<span class="eyebrow">${t}</span><div class="vh"><span class="ii">${ico(p.i)}</span><h2>${p.t}</h2></div><p class="q">${FDY_ONLY[t]}. ${p.sh}'s agent-level controls are at 500 ft and 20,000 ft.</p><div class="vfoot">${ico('zoom-in')}<span>This deep dive is Foundry-only.</span><button data-fdy>Show the Foundry view</button></div>`;
+      fillIcons(st); $('[data-fdy]', st).onclick = () => setVert('fdy'); return;
+    }
+    const d = PD[t][vert], k = DXSEQ.indexOf(t), up = DXSEQ[k - 1], dn = DXSEQ[k + 1];
+    st.innerHTML = `<div class="dx-top"><div class="dx-crumb"><button data-go="30,000 ft">30k · Tenant</button><span>›</span><button data-go="20,000 ft">20k · ${p.sh}</button><span>›</span><b>${t}</b></div><button class="dx-fdy" data-fdy>Foundry view</button></div>`
+      + `<div class="vh"><span class="ii">${ico(p.i)}</span><div><span class="dx-q">${VQ[t]}</span><h2>${d.h}</h2></div></div>`
+      + `<div class="dx-body"><div class="dx-main">${dxBody(t, d, p)}</div>${dxSide(t, d, p)}</div>`
+      + seeIt(d.shots, t)
+      + `<div class="dx-foot"><button data-go="${up}">${ico('zoom-out')}Zoom out: ${up}</button><span>${p.sh} at ${t}: <b>${VQ[t].toLowerCase().replace('?', '')}</b></span><button data-go="${dn}">Zoom in: ${dn}${ico('zoom-in')}</button></div>`;
+    fillIcons(st); wireShots(st);
+    $$('[data-go]', st).forEach((b) => b.onclick = () => go(b.dataset.go));
+    $('[data-fdy]', st).onclick = () => setVert('fdy');
+    $$('[data-eff]', st).forEach((b) => b.onclick = () => { dxEff = b.dataset.eff; renderStubs(); hydrateCites(); });
+  });
+}
+function renderVsw() {
+  $('#vsw').innerHTML = PLANES.map((p) => `<button data-v="${p.id}" class="${p.id === vert ? 'on' : ''}" style="--pc:${p.c}" title="Traverse ${p.t}"><i></i>${p.sh}</button>`).join('');
+  $$('#vsw button').forEach((b) => b.onclick = () => setVert(b.dataset.v));
+}
+function setVert(v) {
+  vert = v; const p = PLANES[PJ()];
+  document.body.dataset.vert = v; document.body.style.setProperty('--vc', p.c);
+  renderPlanes(); renderStubs(); renderVsw(); hydrateCites(); changed();
+}
+$$('#rail .it').forEach((a) => { if (VSECS.includes(a.dataset.sec) || a.dataset.sec === '20,000 ft') a.classList.add('vdesc'); });
+
+
 
 /* ================= agent types coverage ================= */
 const ATYPES = [
@@ -1587,6 +2166,13 @@ const NOTES = {
     ask: 'Ask: who in your organization owns the Agents area of the admin center today?',
     now: () => `Showing: <b>${pSel === 'all' ? 'All Ignite updates' : PSHOT.find((s) => s.id === pSel).t}</b>`,
   },
+  '20,000 ft': {
+    say: 'Before we drop into Azure, here is everywhere agents actually get built. Foundry is one of four planes, not the whole picture.',
+    pts: ['<b>Pick a plane</b> with the tabs. The diagram is the same for every plane: who builds the agent, who calls it, what it knows and what it can call.', 'The five <b>zones</b> show where controls act. Glowing zones with a <b>+N</b> badge got something at Ignite 2026; click one for the details.', 'The <b>enterprise layer</b> on top shows which shared controls reach this plane (dashed lines). Greyed chips don\'t reach it.', 'Toggle <b>Before Ignite</b> to show the gaps. Your plane choice carries down every altitude below.', 'The side panel shows a <b>screenshot</b> of the selected zone and a <b>Zoom in</b> button to the altitude where that control lives.'],
+    watch: 'Many of these are Preview or Frontier. GitHub items marked Context shipped before Ignite (February 2026).',
+    ask: 'Ask: where are your agents being built today, and who administers each plane?',
+    now: () => `Plane: <b>${PLANES[PJ()].t}</b> · Zone: <b>${PROWS[pZone[vert] || 0].t}</b> · View: <b>${pPre ? 'Before Ignite' : 'With Ignite 2026'}</b>`,
+  },
   '10,000 ft': {
     say: 'Policy inherits down the management-group tree, so where you assign it is the real decision.',
     pts: ['Switch the scope and watch what inherits.', 'The landing-zones group is the usual starting point: workloads inherit, Sandbox stays free.', 'Foundry governance (formerly Control Plane) rolls up compliance, posture and cost across projects, but it <b>doesn\'t replace</b> Azure Policy evaluation.'],
@@ -1607,7 +2193,7 @@ const NOTES = {
   },
   '500 ft': {
     say: 'The newest controls act on the agent itself: what it may run, call, connect to and spend.',
-    pts: ['The top band answers <b>where you set it</b>. Outside Foundry only: agent kinds and images, models. Both: tools, egress, content safety. Inside Foundry only: cost.', 'Outside Foundry means Azure Policy in the Azure portal, checked on save. Foundry → Compliance only shows the results and links out.', 'Inside Foundry means a setting in ai.azure.com or the project API, enforced at runtime.', 'Egress: four new definitions check the egress rules you write in the guardrail; they don\'t create them.'],
+    pts: ['The top band answers <b>where you set it</b>. Outside Foundry only: agent kinds and images, models. Both: tools, egress, content safety. Inside Foundry only: cost.', 'Outside Foundry means Azure Policy in the Azure portal, checked on save. Foundry → Compliance only shows the results and links out.', 'Inside Foundry means a setting in ai.azure.com or the project API, enforced at runtime.', 'Egress: four new definitions check the egress rules you write in the guardrail; they don\'t create them.', 'Screenshots at the bottom: a toolbox with a guardrail attached, and Conditional Access targeting agents built in Foundry or Copilot Studio.'],
     watch: 'The agent-kind, container-image and egress policies are preview and rolling out in six regions (Brazil South, Canada Central, Korea Central, Norway East, Southeast Asia, Spain Central). Check the region first.',
     ask: 'Ask: which of these does each team configure today?',
     now: () => `Selected: <b>${AGENT.find((a) => a.id === agSel).t}</b>`,
@@ -1620,7 +2206,7 @@ const NOTES = {
   },
   'Guardrail map': {
     say: 'One picture: where each control attaches, which plane it acts on, and who sets it.',
-    pts: ['Guardrails attach at three levels: <b>model deployment</b>, <b>agent</b> (overrides the model) and <b>toolbox</b> (covers every agent that uses it).', 'Badges 1 to 4 are the intervention points; tool call and tool response are agent-only and preview.', 'Egress rules live in the same guardrail, but only hosted agents and Copilot-harness prompt agents use them.', 'Defender (red) runs alongside the guardrails: posture in the background, alerts (GA), and real-time blocking for Foundry agents (preview), owned by Security.', 'Purview (green) is the data layer: audit and DSPM in the background; DLP and sensitivity labels enforce only when the app passes user context or retrieves through AI Search.', 'Click a role to see what each person owns. Dashed badges are set outside Foundry (Azure Policy, Defender, Purview); solid badges are set inside Foundry.'],
+    pts: ['Guardrails attach at three levels: <b>model deployment</b>, <b>agent</b> (overrides the model) and <b>toolbox</b> (covers every agent that uses it).', 'Badges 1 to 4 are the intervention points; tool call and tool response are agent-only and preview.', 'Egress rules live in the same guardrail, but only hosted agents and Copilot-harness prompt agents use them.', 'Defender (red) runs alongside the guardrails: posture in the background, alerts (GA), and real-time blocking for Foundry agents (preview), owned by Security.', 'Purview (green) is the data layer: audit and DSPM in the background; DLP and sensitivity labels enforce only when the app passes user context or retrieves through AI Search.', 'Click a role to see what each person owns. Dashed badges are set outside Foundry (Azure Policy, Defender, Purview); solid badges are set inside Foundry.', 'Screenshots: a real guardrail with its Block actions, and Defender flagging a published agent that has <b>no guardrails</b>.'],
     watch: 'Tool controls and cost controls aren\'t Azure Policies: tool controls are a project property, cost controls live under Manage → Cost.',
     ask: 'Ask: who in your organization may edit a guardrail? That right changes every agent using it.',
     now: () => `Selected: <b>${CTL.find((c) => c.id === gmSel).l}</b>` + (gmRole ? ` · Role: <b>${GROLES[gmRole].t}</b>` : '') + (gmLens !== 'all' ? ` · Filter: <b>${GCAT[gmLens]}</b>` : ''),
@@ -1645,7 +2231,9 @@ const NOTES = {
   },
 };
 function renderNotes() {
-  const n = NOTES[cur]; $('#nsec').textContent = '· ' + cur; if (!n) { $('#nbody').innerHTML = ''; return; }
+  const stub = typeof vert !== 'undefined' && vert !== 'fdy' && VSECS.includes(cur);
+  const dxd = stub && typeof PD !== 'undefined' && PD[cur] ? PD[cur][vert] : null;
+  const n = stub ? (dxd ? { say: `Traversing ${PLANES[PJ()].t} at ${cur}: ${dxd.h}. Same question as Foundry: ${VQ[cur].toLowerCase()}`, pts: ['Plain items are available today; outlined ones were added at Ignite 2026. The bar on the right shows the GA, preview and Frontier mix.', 'Hover a screenshot to light up the control it shows; click it to enlarge. All screenshots use demo tenants.', 'Zoom out and zoom in sit at the bottom; the breadcrumb jumps back to 20,000 ft. Switch planes from the pills at the top right.'], ask: 'Ask: which of these are already switched on in your tenant, and who owns them?' } : { say: `${cur} is a Foundry deep dive.`, pts: ['Switch back to Foundry, or keep descending: the next altitude has the full view for this plane.'] }) : NOTES[cur]; $('#nsec').textContent = '· ' + cur; if (!n) { $('#nbody').innerHTML = ''; return; }
   $('#nbody').innerHTML = `<p class="say">${n.say}</p><ul>${n.pts.map((p) => `<li>${p}</li>`).join('')}</ul>${n.watch ? `<div class="wt"><b>Watch:</b> ${n.watch}</div>` : ''}${n.ask ? `<div class="a">${n.ask}</div>` : ''}${n.now ? `<div class="now">${n.now()}</div>` : ''}`;
 }
 document.addEventListener('statechange', renderNotes);
@@ -1694,7 +2282,7 @@ $('#explain').onclick = (e) => { if (e.target.id === 'explain' || e.target.close
 /* ================= sources overlay ================= */
 function renderSrc() {
   const grp = (k, h) => `<div class="srcg"><h5>${h}</h5>${Object.entries(SRC).filter(([, s]) => s.k === k).map(([id, s]) => `<div class="srow"><span>${cite(id)}</span><div><a href="${s.u}" target="_blank" rel="noopener">${s.t}</a><div class="su">${s.ev || 'Microsoft Learn'}${s.n ? ' · ' + s.n : ''}</div></div><div class="uses">${[...(SRC_USE[id] || [])].map((w) => `<button data-go="${w}">${w}</button>`).join('')}</div></div>`).join('')}</div>`;
-  $('#srcbody').innerHTML = `<div class="kick" style="--c:var(--brand)">Sources</div><h3>Every claim, cited</h3><p class="el">Chips across the deck link straight to these. <span class="ci l">L</span> Microsoft Learn documentation is the source of truth for behaviour and status. <span class="ci i">I</span> Ignite 2026 announcements say what's new. Checked Nov 23, 2026; preview items can change. The right column shows where each source is used.</p>` + grp('i', 'Ignite 2026 announcements') + grp('l', 'Microsoft Learn documentation');
+  $('#srcbody').innerHTML = `<div class="kick" style="--c:var(--brand)">Sources</div><h3>Every claim, cited</h3><p class="el">Chips across the deck link straight to these. <span class="ci l">L</span> Microsoft Learn documentation is the source of truth for behaviour and status. <span class="ci i">I</span> Ignite 2026 announcements say what's new. <span class="ci g">G</span> GitHub Docs covers GitHub Copilot, which isn't documented on Microsoft Learn. Checked Nov 24, 2026; preview items can change. The right column shows where each source is used.</p>` + grp('i', 'Ignite 2026 announcements') + grp('l', 'Microsoft Learn documentation') + grp('g', 'GitHub Docs');
   $$('#srcbody [data-go]').forEach((b) => b.onclick = () => { closeSrc(); SEC(b.dataset.go).scrollIntoView({ behavior: STATIC ? 'auto' : 'smooth' }); });
 }
 const openSrc = () => { renderSrc(); $('#srcov').hidden = false; };
@@ -1706,6 +2294,11 @@ function registerSrc() {
   POL.forEach((p) => useSrc(POL_SRC(p), '5,000 ft'));
   Object.values(LENS_SRC).concat(Object.values(NODE_SRC)).forEach((v) => useSrc(v, '1,000 ft'));
   Object.values(AG_SRC).forEach((v) => useSrc(v, '500 ft'));
+  PSHOT.forEach((s) => useSrc(s.src, 'Agent 365 portal'));
+  Object.entries(PD).forEach(([t, o]) => Object.values(o).forEach((d) => { dxItems(d).forEach((x) => useSrc(x[2], t)); (d.shots || []).forEach(([id]) => useSrc(XS[id].src, t)); }));
+  Object.entries(FSEE).forEach(([t, l]) => l.forEach(([id]) => useSrc(XS[id].src, t)));
+  Object.values(Z20).forEach((l) => l.forEach((id) => id && useSrc(XS[id].src, '20,000 ft')));
+  PROWS.forEach((r) => { useSrc(r.band[5], '20,000 ft'); r.cells.forEach((c) => [...c.b, ...c.n].forEach((x) => useSrc(x[2], '20,000 ft'))); });
   Object.values(GM_SRC).forEach((v) => useSrc(v, 'Guardrail map'));
   STEP_SRC.forEach((v) => useSrc(v, 'Ground level'));
   DEC_SRC.forEach((v) => useSrc(v, 'Discussion'));
@@ -1829,7 +2422,7 @@ function buildWorld() {
   for (let i = 0; i < 34; i++) c += `<ellipse cx="${q(r() * WW)}" cy="${q(r() * 1800)}" rx="${q(220 + r() * 360)}" ry="${q(90 + r() * 140)}" fill="#fff" opacity="${(.75 + r() * .25).toFixed(2)}"/>`;
   $('#cloudPass').innerHTML = `<svg viewBox="0 0 ${WW} 1800" preserveAspectRatio="xMidYMid slice">${c}</g></svg>`;
 }
-const ALT_POS = { 'Overview': 0, '30,000 ft': 1, 'Agent 365 portal': 1.45, '10,000 ft': 2, '5,000 ft': 3, '1,000 ft': 4, '500 ft': 5, 'Agent types': 5, 'Guardrail map': 5, 'Ground level': 6, 'Operating model': 6, 'Discussion': 6 };
+const ALT_POS = { 'Overview': 0, '30,000 ft': 1, 'Agent 365 portal': 1.45, '20,000 ft': 1.75, '10,000 ft': 2, '5,000 ft': 3, '1,000 ft': 4, '500 ft': 5, 'Agent types': 5, 'Guardrail map': 5, 'Ground level': 6, 'Operating model': 6, 'Discussion': 6 };
 const RM = matchMedia('(prefers-reduced-motion: reduce)');
 let wLast = null, wBlur = 0, wRaf = 0;
 const posOf = (s) => ALT_POS[s.dataset.t] ?? 6;
@@ -1873,7 +2466,8 @@ const io = new IntersectionObserver((ents) => ents.forEach((en) => {
 fillIcons();
 buildWorld();
 hydrateCites(); registerSrc();
-renderTree(); renderFams(); renderArch(); renderAgent(); renderCov(); renderGm(); renderPortal(); setStep(0);
+Object.entries(FSEE).forEach(([t, l]) => { const w = $('.wrap', SEC(t)); w.insertAdjacentHTML('beforeend', seeIt(l, t)); w.lastElementChild.style.setProperty('--pc', '#0F6CBD'); fillIcons(w); wireShots(w); });
+renderTree(); renderFams(); renderArch(); renderAgent(); renderCov(); renderGm(); renderPortal(); setVert('fdy'); setStep(0);
 SECS.forEach((s) => io.observe(s));
 if (STATIC) SECS.forEach((s) => { s.classList.add('is-in'); countUp(s); });
 setCur('Overview');

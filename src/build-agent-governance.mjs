@@ -25,6 +25,7 @@ const MSFT = '<svg class="ico ico-brand" viewBox="0 0 23 23" xmlns="http://www.w
 const ICO = {}, missing = [];
 // Fallback when lucide-static isn't installable: Lucide (ISC license) paths for the icons this deck uses.
 const FB = {
+  'git-branch': '<line x1="6" x2="6" y1="3" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/>',
   'x': '<path d="M18 6 6 18"/><path d="m6 6 12 12"/>',
   'user-round': '<circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/>',
   'arrow-up-right': '<path d="M7 7h10v10"/><path d="M7 17 17 7"/>',
@@ -42,6 +43,8 @@ const FB = {
   'activity': '<path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"/>',
   'globe': '<circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/>',
   'zoom-in': '<circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6"/><path d="M8 11h6"/>',
+  'zoom-out': '<circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M8 11h6"/>',
+  'camera': '<path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/>',
   'users-round': '<path d="M18 21a8 8 0 0 0-16 0"/><circle cx="10" cy="8" r="5"/><path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3"/>',
   'layers': '<path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/>',
   'cpu': '<rect width="16" height="16" x="4" y="4" rx="2"/><rect width="6" height="6" x="9" y="9" rx="1"/><path d="M15 2v2"/><path d="M15 20v2"/><path d="M2 15h2"/><path d="M2 9h2"/><path d="M20 15h2"/><path d="M20 9h2"/><path d="M9 2v2"/><path d="M9 20v2"/>',
@@ -96,7 +99,10 @@ for (const k of exKeys) if (!has(explain, k)) problems.push(`data-explain="${k}"
 
 // Portal screenshots (Microsoft Learn), inlined as WebP data URIs so the brief works offline.
 const SHOTS = {}; const SHOT_DIR = join(dirname(TEMPLATE), 'shots');
-for (const n of ['overview', 'registry', 'details', 'map', 'tools', 'mcp', 'rule', 'platforms', 'multi', 'cowork', 'biz', 'action']) {
+// Product screenshots for each plane and altitude (Microsoft Learn, GitHub Docs, Ignite blogs; demo tenants only).
+const XSHOTS = ['fdy_guard', 'fdy_tbx', 'def_agent', 'cps_acct', 'cps_ident', 'cps_envgrp', 'cps_grplock', 'cps_dlperr', 'cps_http', 'cps_cost', 'cps_sharing', 'cps_share', 'cps_monitor', 'ca_agents',
+  'm365_agents', 'm365_rcdset', 'm365_dlp', 'm365_rcd', 'm365_rac', 'm365_overshare', 'm365_dspm', 'm365_web', 'm365_blocked', 'm365_cites', 'gh_ai', 'gh_fw'];
+for (const n of ['overview', 'registry', 'details', 'map', 'tools', 'mcp', 'rule', 'platforms', 'multi', 'cowork', 'biz', 'action', ...XSHOTS]) {
   const p = join(SHOT_DIR, n + '.webp');
   if (existsSync(p)) SHOTS[n] = 'data:image/webp;base64,' + readFileSync(p).toString('base64'); else problems.push('missing screenshot ' + n);
 }

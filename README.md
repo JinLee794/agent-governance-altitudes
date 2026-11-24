@@ -7,13 +7,14 @@ An interactive, single-file brief on how Microsoft governs AI agents at enterpri
 ## What's inside
 
 - **30,000 ft:** Agent 365 as the control plane, plus screenshots of the Microsoft 365 admin center with GA, Preview and Frontier labels for every Ignite 2026 update
-- **10,000 ft → 1,000 ft:** management-group scope, the Azure Policy built-ins for Foundry, and how each AI resource is built
+- **20,000 ft:** pick a build plane (Microsoft Foundry, Copilot Studio, Microsoft 365 Copilot or GitHub Copilot) and see where its controls act and what Ignite 2026 added. The choice carries down every altitude below
+- **10,000 ft → Ground:** for Foundry, management-group scope, the Azure Policy built-ins for Foundry, and how each AI resource is built. For the other planes, the same five views (scope, policy catalog, resource, agent controls, a single request) show what's available today, with real product screenshots
 - **500 ft:** agent-level controls, where each one is set (outside Foundry, inside Foundry, or both), and which cover only hosted agents
 - **Guardrail map, ground level, operating model and discussion prompts**
 
-Every claim carries a source chip linking to Microsoft Learn or an Ignite 2026 announcement. Press **S** for all sources and **N** for speaker notes.
+Every claim carries a source chip linking to Microsoft Learn, GitHub Docs or an Ignite 2026 announcement. Press **S** for all sources and **N** for speaker notes.
 
-Status labels reflect public documentation as of November 23, 2026. Screenshots come from Microsoft Learn and the Microsoft Tech Community Agent 365 blog, and show demo data.
+Status labels reflect public documentation as of November 24, 2026. Screenshots come from Microsoft Learn, GitHub Docs and public Microsoft and GitHub blogs, and show demo or sample tenants only.
 
 ## Layout
 
